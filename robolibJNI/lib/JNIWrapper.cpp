@@ -2,16 +2,16 @@
 #include <assert.h>
 #include "Log.hpp"
 
-#include "io_github_robolib_hal_JNIWrapper.h"
+#include "io_github_robolib_jni_JNIWrapper.h"
 
 #include "HAL/HAL.hpp"
 
 /*
- * Class:     io_github_robolib_hal_JNIWrapper
+ * Class:     io_github_robolib_jni_JNIWrapper
  * Method:    getPortWithModule
  * Signature: (BB)Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_JNIWrapper_getPortWithModule
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_JNIWrapper_getPortWithModule
   (JNIEnv * env, jclass, jbyte module, jbyte pin)
 {
 	//FILE_LOG(logDEBUG) << "Calling JNIWrapper getPortWithModlue";
@@ -24,11 +24,11 @@ JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_JNIWrapper_getPortWithModul
 }
 
 /*
- * Class:     io_github_robolib_hal_JNIWrapper
+ * Class:     io_github_robolib_jni_JNIWrapper
  * Method:    getPort
  * Signature: (BB)Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_JNIWrapper_getPort
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_JNIWrapper_getPort
   (JNIEnv * env, jclass, jbyte pin)
 {
 	//FILE_LOG(logDEBUG) << "Calling JNIWrapper getPortWithModlue";

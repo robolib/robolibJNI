@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "Log.hpp"
 
-#include "io_github_robolib_hal_CounterJNI.h"
+#include "io_github_robolib_jni_CounterJNI.h"
 
 #include "HAL/Digital.hpp"
 
@@ -14,11 +14,11 @@ TLogLevel counterJNILogLevel = logWARNING;
     else Log().Get(level)
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    initializeCounter
  * Signature: (ILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_CounterJNI_initializeCounter
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_CounterJNI_initializeCounter
   (JNIEnv * env, jclass, jint mode, jobject index, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI initializeCounter";
@@ -36,11 +36,11 @@ JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_CounterJNI_initializeCounte
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    freeCounter
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_freeCounter
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_freeCounter
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI freeCounter";
@@ -53,11 +53,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_freeCounter
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    setCounterAverageSize
  * Signature: (Ljava/nio/ByteBuffer;ILjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterAverageSize
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_setCounterAverageSize
   (JNIEnv * env, jclass, jobject id, jint value, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI setCounterAverageSize";
@@ -71,11 +71,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterAverageSi
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    setCounterUpSource
  * Signature: (Ljava/nio/ByteBuffer;BIBLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterUpSource
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_setCounterUpSource
   (JNIEnv * env, jclass, jobject id, jint pin, jbyte analogTrigger, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI setCounterUpSource";
@@ -90,11 +90,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterUpSource
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    setCounterUpSourceEdge
  * Signature: (Ljava/nio/ByteBuffer;BBLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterUpSourceEdge
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_setCounterUpSourceEdge
   (JNIEnv * env, jclass, jobject id, jbyte valueRise, jbyte valueFall, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI setCounterUpSourceEdge";
@@ -109,11 +109,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterUpSourceE
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    clearCounterUpSource
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_clearCounterUpSource
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_clearCounterUpSource
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI clearCounterUpSource";
@@ -126,11 +126,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_clearCounterUpSourc
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    setCounterDownSource
  * Signature: (Ljava/nio/ByteBuffer;BIBLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterDownSource
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_setCounterDownSource
   (JNIEnv * env, jclass, jobject id, jint pin, jbyte analogTrigger, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI setCounterDownSource";
@@ -145,11 +145,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterDownSourc
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    setCounterDownSourceEdge
  * Signature: (Ljava/nio/ByteBuffer;BBLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterDownSourceEdge
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_setCounterDownSourceEdge
   (JNIEnv * env, jclass, jobject id, jbyte valueRise, jbyte valueFall, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI setCounterDownSourceEdge";
@@ -164,11 +164,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterDownSourc
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    clearCounterDownSource
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_clearCounterDownSource
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_clearCounterDownSource
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI clearCounterDownSource";
@@ -181,11 +181,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_clearCounterDownSou
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    setCounterUpDownMode
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterUpDownMode
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_setCounterUpDownMode
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI setCounterUpDownMode";
@@ -198,11 +198,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterUpDownMod
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    setCounterExternalDirectionMode
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterExternalDirectionMode
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_setCounterExternalDirectionMode
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI setCounterExternalDirectionMode";
@@ -215,11 +215,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterExternalD
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    setCounterSemiPeriodMode
  * Signature: (Ljava/nio/ByteBuffer;BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterSemiPeriodMode
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_setCounterSemiPeriodMode
   (JNIEnv * env, jclass, jobject id, jbyte value, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI setCounterSemiPeriodMode";
@@ -233,11 +233,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterSemiPerio
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    setCounterPulseLengthMode
  * Signature: (Ljava/nio/ByteBuffer;DLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterPulseLengthMode
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_setCounterPulseLengthMode
   (JNIEnv * env, jclass, jobject id, jdouble value, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI setCounterPulseLengthMode";
@@ -251,11 +251,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterPulseLeng
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    getCounterSamplesToAverage
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_CounterJNI_getCounterSamplesToAverage
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_CounterJNI_getCounterSamplesToAverage
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI getCounterSamplesToAverage";
@@ -270,11 +270,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_CounterJNI_getCounterSamplesTo
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    setCounterSamplesToAverage
  * Signature: (Ljava/nio/ByteBuffer;ILjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterSamplesToAverage
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_setCounterSamplesToAverage
   (JNIEnv * env, jclass, jobject id, jint value, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI setCounterSamplesToAverage";
@@ -288,11 +288,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterSamplesTo
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    resetCounter
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_resetCounter
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_resetCounter
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI resetCounter";
@@ -305,11 +305,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_resetCounter
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    getCounter
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_CounterJNI_getCounter
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_CounterJNI_getCounter
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	//COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI getCounter";
@@ -324,11 +324,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_CounterJNI_getCounter
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    getCounterPeriod
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)D
  */
-JNIEXPORT jdouble JNICALL Java_io_github_robolib_hal_CounterJNI_getCounterPeriod
+JNIEXPORT jdouble JNICALL Java_io_github_robolib_jni_CounterJNI_getCounterPeriod
   (JNIEnv *env, jclass, jobject id, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI getCounterPeriod";
@@ -343,11 +343,11 @@ JNIEXPORT jdouble JNICALL Java_io_github_robolib_hal_CounterJNI_getCounterPeriod
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    setCounterMaxPeriod
  * Signature: (Ljava/nio/ByteBuffer;DLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterMaxPeriod
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_setCounterMaxPeriod
   (JNIEnv * env, jclass, jobject id, jdouble value, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI setCounterMaxPeriod";
@@ -361,11 +361,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterMaxPeriod
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    setCounterUpdateWhenEmpty
  * Signature: (Ljava/nio/ByteBuffer;BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterUpdateWhenEmpty
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_setCounterUpdateWhenEmpty
   (JNIEnv * env, jclass, jobject id, jbyte value, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI setCounterMaxPeriod";
@@ -379,11 +379,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterUpdateWhe
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    getCounterStopped
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_CounterJNI_getCounterStopped
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_CounterJNI_getCounterStopped
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI getCounterStopped";
@@ -398,11 +398,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_CounterJNI_getCounterStopped
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    getCounterDirection
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_CounterJNI_getCounterDirection
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_CounterJNI_getCounterDirection
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI getCounterDirection";
@@ -417,11 +417,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_CounterJNI_getCounterDirectio
 }
 
 /*
- * Class:     io_github_robolib_hal_CounterJNI
+ * Class:     io_github_robolib_jni_CounterJNI
  * Method:    setCounterReverseDirection
  * Signature: (Ljava/nio/ByteBuffer;BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CounterJNI_setCounterReverseDirection
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CounterJNI_setCounterReverseDirection
   (JNIEnv * env, jclass, jobject id, jbyte value, jobject status)
 {
 	COUNTERJNI_LOG(logDEBUG) << "Calling COUNTERJNI setCounterReverseDirection";

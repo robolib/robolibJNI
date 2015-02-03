@@ -2,7 +2,7 @@
 #include "Log.hpp"
 #include "HAL/HAL.hpp"
 
-#include "io_github_robolib_hal_SolenoidJNI.h"
+#include "io_github_robolib_jni_SolenoidJNI.h"
 
 TLogLevel solenoidJNILogLevel = logERROR;
 
@@ -13,11 +13,11 @@ TLogLevel solenoidJNILogLevel = logERROR;
 typedef void *VoidPointer;
 
 /*
- * Class:     io_github_robolib_hal_SolenoidJNI
+ * Class:     io_github_robolib_jni_SolenoidJNI
  * Method:    initializeSolenoidPort
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_SolenoidJNI_initializeSolenoidPort
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_SolenoidJNI_initializeSolenoidPort
   (JNIEnv *env, jclass, jobject port_pointer, jobject status)
 {
 	SOLENOIDJNI_LOG(logDEBUG) << "Calling SolenoidJNI initializeSolenoidPort";
@@ -43,11 +43,11 @@ JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_SolenoidJNI_initializeSolen
 }
 
 /*
- * Class:     io_github_robolib_hal_SolenoidJNI
+ * Class:     io_github_robolib_jni_SolenoidJNI
  * Method:    getPortWithModule
  * Signature: (BB)Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_SolenoidJNI_getPortWithModule
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_SolenoidJNI_getPortWithModule
   (JNIEnv *env, jclass, jbyte module, jbyte channel)
 {
 	VoidPointer *port_pointer = new VoidPointer;
@@ -57,11 +57,11 @@ JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_SolenoidJNI_getPortWithModu
 }
 
 /*
- * Class:     io_github_robolib_hal_SolenoidJNI
+ * Class:     io_github_robolib_jni_SolenoidJNI
  * Method:    setSolenoid
  * Signature: (Ljava/nio/ByteBuffer;BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SolenoidJNI_setSolenoid
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SolenoidJNI_setSolenoid
   (JNIEnv *env, jclass, jobject solenoid_port, jbyte value, jobject status)
 {
 	SOLENOIDJNI_LOG(logDEBUG) << "Calling SolenoidJNI SetSolenoid";
@@ -76,11 +76,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SolenoidJNI_setSolenoid
 }
 
 /*
- * Class:     io_github_robolib_hal_SolenoidJNI
+ * Class:     io_github_robolib_jni_SolenoidJNI
  * Method:    getSolenoid
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_SolenoidJNI_getSolenoid
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_SolenoidJNI_getSolenoid
   (JNIEnv *env, jclass, jobject solenoid_port, jobject status)
 {
 	
@@ -91,11 +91,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_SolenoidJNI_getSolenoid
 }
 
 /*
- * Class:     io_github_robolib_hal_SolenoidJNI
+ * Class:     io_github_robolib_jni_SolenoidJNI
  * Method:    getPCMSolenoidBlackList
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_SolenoidJNI_getPCMSolenoidBlackList
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_SolenoidJNI_getPCMSolenoidBlackList
   (JNIEnv *env, jclass, jobject solenoid_port, jobject status)
 {
 	
@@ -105,11 +105,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_SolenoidJNI_getPCMSolenoidBla
 	return getPCMSolenoidBlackList(*solenoid_port_pointer, status_pointer);
 }
 /*
- * Class:     io_github_robolib_hal_SolenoidJNI
+ * Class:     io_github_robolib_jni_SolenoidJNI
  * Method:    getPCMSolenoidVoltageStickyFault
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)Z
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_SolenoidJNI_getPCMSolenoidVoltageStickyFault
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_SolenoidJNI_getPCMSolenoidVoltageStickyFault
   (JNIEnv *env, jclass, jobject solenoid_port, jobject status)
 {
 	VoidPointer *solenoid_port_pointer = (VoidPointer *)env->GetDirectBufferAddress(solenoid_port);
@@ -118,11 +118,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_SolenoidJNI_getPCMSolenoid
 	return getPCMSolenoidVoltageStickyFault(*solenoid_port_pointer, status_pointer);
 }
 /*
- * Class:     io_github_robolib_hal_SolenoidJNI
+ * Class:     io_github_robolib_jni_SolenoidJNI
  * Method:    getPCMSolenoidVoltageFault
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)Z
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_SolenoidJNI_getPCMSolenoidVoltageFault
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_SolenoidJNI_getPCMSolenoidVoltageFault
   (JNIEnv *env, jclass, jobject solenoid_port, jobject status)
 {
 	VoidPointer *solenoid_port_pointer = (VoidPointer *)env->GetDirectBufferAddress(solenoid_port);
@@ -131,11 +131,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_SolenoidJNI_getPCMSolenoid
 	return getPCMSolenoidVoltageFault(*solenoid_port_pointer, status_pointer);
 }
 /*
- * Class:     io_github_robolib_hal_SolenoidJNI
+ * Class:     io_github_robolib_jni_SolenoidJNI
  * Method:    clearAllPCMStickyFaults
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SolenoidJNI_clearAllPCMStickyFaults
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SolenoidJNI_clearAllPCMStickyFaults
   (JNIEnv *env, jclass, jobject solenoid_port, jobject status)
 {
 	VoidPointer *solenoid_port_pointer = (VoidPointer *)env->GetDirectBufferAddress(solenoid_port);

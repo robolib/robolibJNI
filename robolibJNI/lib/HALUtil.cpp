@@ -1,7 +1,7 @@
 #include <jni.h>
 #include <assert.h>
 #include "Log.hpp"
-#include "io_github_robolib_hal_HALUtil.h"
+#include "io_github_robolib_jni_HALUtil.h"
 #include "HAL/HAL.hpp"
 #include "errno.h"
 #include <string.h>
@@ -25,11 +25,11 @@ JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved)
 }
 
 /*
- * Class:     io_github_robolib_hal_HALUtil
+ * Class:     io_github_robolib_jni_HALUtil
  * Method:    initializeMutex
  * Signature: (I)Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_HALUtil_initializeMutexNormal
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_HALUtil_initializeMutexNormal
 (JNIEnv * env, jclass)
 {
 	HALUTIL_LOG(logDEBUG) << "Calling HALUtil initializeMutex";
@@ -40,11 +40,11 @@ JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_HALUtil_initializeMutexNorm
 }
 
 /*
- * Class:     io_github_robolib_hal_HALUtil
+ * Class:     io_github_robolib_jni_HALUtil
  * Method:    deleteMutex
  * Signature: (Ljava/nio/ByteBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_HALUtil_deleteMutex
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_HALUtil_deleteMutex
 (JNIEnv * env, jclass, jobject id )
 {
 	HALUTIL_LOG(logDEBUG) << "Calling HALUtil deleteMutex";
@@ -54,11 +54,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_HALUtil_deleteMutex
 }
 
 /*
- * Class:     io_github_robolib_hal_HALUtil
+ * Class:     io_github_robolib_jni_HALUtil
  * Method:    takeMutex
  * Signature: (Ljava/nio/ByteBuffer;I)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_HALUtil_takeMutex
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_HALUtil_takeMutex
 (JNIEnv * env, jclass, jobject id)
 {
 	//HALUTIL_LOG(logDEBUG) << "Calling HALUtil takeMutex";
@@ -70,11 +70,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_HALUtil_takeMutex
 }
 
 /*
- * Class:     io_github_robolib_hal_HALUtil
+ * Class:     io_github_robolib_jni_HALUtil
  * Method:    initializeMultiWait
  * Signature: ()Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_HALUtil_initializeMultiWait
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_HALUtil_initializeMultiWait
 (JNIEnv * env, jclass)
 {
 	HALUTIL_LOG(logDEBUG) << "Calling HALUtil initializeMultiWait";
@@ -85,11 +85,11 @@ JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_HALUtil_initializeMultiWait
 }
 
 /*
- * Class:     io_github_robolib_hal_HALUtil
+ * Class:     io_github_robolib_jni_HALUtil
  * Method:    deleteMultiWait
  * Signature: (Ljava/nio/ByteBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_HALUtil_deleteMultiWait
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_HALUtil_deleteMultiWait
 (JNIEnv * env, jclass, jobject id)
 {
 	HALUTIL_LOG(logDEBUG) << "Calling HALUtil deleteMultiWait";
@@ -99,11 +99,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_HALUtil_deleteMultiWait
 }
 
 /*
- * Class:     io_github_robolib_hal_HALUtil
+ * Class:     io_github_robolib_jni_HALUtil
  * Method:    takeMultiWait
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;I)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_HALUtil_takeMultiWait
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_HALUtil_takeMultiWait
   (JNIEnv * env, jclass, jobject multiWaitId, jobject mutexId, jint timeout)
 {
  	MULTIWAIT_ID* javaMultiWaitId = (MULTIWAIT_ID*)env->GetDirectBufferAddress(multiWaitId);
@@ -113,11 +113,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_HALUtil_takeMultiWait
 }
 
 /*
- * Class:     io_github_robolib_hal_HALUtil
+ * Class:     io_github_robolib_jni_HALUtil
  * Method:    getFPGAVersion
  * Signature: (Ljava/nio/IntBuffer;)S
  */
-JNIEXPORT jshort JNICALL Java_io_github_robolib_hal_HALUtil_getFPGAVersion
+JNIEXPORT jshort JNICALL Java_io_github_robolib_jni_HALUtil_getFPGAVersion
   (JNIEnv * env, jclass, jobject status)
 {
 	HALUTIL_LOG(logDEBUG) << "Calling HALUtil getFPGAVersion";
@@ -129,11 +129,11 @@ JNIEXPORT jshort JNICALL Java_io_github_robolib_hal_HALUtil_getFPGAVersion
 }
 
 /*
- * Class:     io_github_robolib_hal_HALUtil
+ * Class:     io_github_robolib_jni_HALUtil
  * Method:    getFPGARevision
  * Signature: (Ljava/nio/IntBuffer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_HALUtil_getFPGARevision
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_HALUtil_getFPGARevision
   (JNIEnv * env, jclass, jobject status)
 {
 	HALUTIL_LOG(logDEBUG) << "Calling HALUtil getFPGARevision";
@@ -145,11 +145,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_HALUtil_getFPGARevision
 }
 
 /*
- * Class:     io_github_robolib_hal_HALUtil
+ * Class:     io_github_robolib_jni_HALUtil
  * Method:    getFPGATime
  * Signature: (Ljava/nio/IntBuffer;)I
  */
-JNIEXPORT jlong JNICALL Java_io_github_robolib_hal_HALUtil_getFPGATime
+JNIEXPORT jlong JNICALL Java_io_github_robolib_jni_HALUtil_getFPGATime
   (JNIEnv * env, jclass, jobject status)
 {
 	//HALUTIL_LOG(logDEBUG) << "Calling HALUtil getFPGATime";
@@ -162,11 +162,11 @@ JNIEXPORT jlong JNICALL Java_io_github_robolib_hal_HALUtil_getFPGATime
 }
 
 /*
- * Class:     io_github_robolib_hal_HALUtil
+ * Class:     io_github_robolib_jni_HALUtil
  * Method:    getFPGAButton
  * Signature: (Ljava/nio/IntBuffer;)I
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_HALUtil_getFPGAButton
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_HALUtil_getFPGAButton
   (JNIEnv * env, jclass, jobject status)
 {
 	//HALUTIL_LOG(logDEBUG) << "Calling HALUtil getFPGATime";
@@ -179,11 +179,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_HALUtil_getFPGAButton
 }
 
 /*
- * Class:     io_github_robolib_hal_HALUtil
+ * Class:     io_github_robolib_jni_HALUtil
  * Method:    getHALErrorMessage
  * Signature: (I)Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_io_github_robolib_hal_HALUtil_getHALErrorMessage
+JNIEXPORT jstring JNICALL Java_io_github_robolib_jni_HALUtil_getHALErrorMessage
   (JNIEnv * paramEnv, jclass, jint paramId)
 {
 	const char * msg = getHALErrorMessage(paramId);
@@ -192,22 +192,22 @@ JNIEXPORT jstring JNICALL Java_io_github_robolib_hal_HALUtil_getHALErrorMessage
 }
 
 /*
- * Class:     io_github_robolib_hal_HALUtil
+ * Class:     io_github_robolib_jni_HALUtil
  * Method:    getHALErrno
  * Signature: ()I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_HALUtil_getHALErrno
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_HALUtil_getHALErrno
   (JNIEnv *, jclass)
 {
 	return errno;
 }
 
 /*
- * Class:     io_github_robolib_hal_HALUtil
+ * Class:     io_github_robolib_jni_HALUtil
  * Method:    getHALstrerror
  * Signature: (I)Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_io_github_robolib_hal_HALUtil_getHALstrerror
+JNIEXPORT jstring JNICALL Java_io_github_robolib_jni_HALUtil_getHALstrerror
   (JNIEnv * env, jclass, jint errorCode)
 {
 	const char * msg = strerror(errno);

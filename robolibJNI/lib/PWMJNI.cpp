@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "Log.hpp"
 
-#include "io_github_robolib_hal_PWMJNI.h"
+#include "io_github_robolib_jni_PWMJNI.h"
 
 #include "HAL/Digital.hpp"
 
@@ -15,11 +15,11 @@ TLogLevel pwmJNILogLevel = logWARNING;
 
 
 /*
- * Class:     io_github_robolib_hal_PWMJNI
+ * Class:     io_github_robolib_jni_PWMJNI
  * Method:    allocatePWMChannel
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)Z
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_PWMJNI_allocatePWMChannel
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_PWMJNI_allocatePWMChannel
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	PWMJNI_LOG(logDEBUG) << "Calling DIOJNI allocatePWMChannel";
@@ -34,11 +34,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_PWMJNI_allocatePWMChannel
 }
 
 /*
- * Class:     io_github_robolib_hal_PWMJNI
+ * Class:     io_github_robolib_jni_PWMJNI
  * Method:    freePWMChannel
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_PWMJNI_freePWMChannel
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_PWMJNI_freePWMChannel
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	PWMJNI_LOG(logDEBUG) << "Calling DIOJNI freePWMChannel";
@@ -52,11 +52,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_PWMJNI_freePWMChannel
 }
 
 /*
- * Class:     io_github_robolib_hal_PWMJNI
+ * Class:     io_github_robolib_jni_PWMJNI
  * Method:    setPWM
  * Signature: (Ljava/nio/ByteBuffer;SLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_PWMJNI_setPWM
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_PWMJNI_setPWM
   (JNIEnv * env, jclass, jobject id, jshort value, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -68,11 +68,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_PWMJNI_setPWM
 }
 
 /*
- * Class:     io_github_robolib_hal_PWMJNI
+ * Class:     io_github_robolib_jni_PWMJNI
  * Method:    getPWM
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)S
  */
-JNIEXPORT jshort JNICALL Java_io_github_robolib_hal_PWMJNI_getPWM
+JNIEXPORT jshort JNICALL Java_io_github_robolib_jni_PWMJNI_getPWM
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -85,11 +85,11 @@ JNIEXPORT jshort JNICALL Java_io_github_robolib_hal_PWMJNI_getPWM
 }
 
 /*
- * Class:     io_github_robolib_hal_PWMJNI
+ * Class:     io_github_robolib_jni_PWMJNI
  * Method:    latchPWMZero
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_PWMJNI_latchPWMZero
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_PWMJNI_latchPWMZero
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
   	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -100,11 +100,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_PWMJNI_latchPWMZero
 }
 
 /*
- * Class:     io_github_robolib_hal_PWMJNI
+ * Class:     io_github_robolib_jni_PWMJNI
  * Method:    setPWMPeriodScale
  * Signature: (Ljava/nio/ByteBuffer;ILjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_PWMJNI_setPWMPeriodScale
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_PWMJNI_setPWMPeriodScale
   (JNIEnv * env, jclass, jobject id, jint value, jobject status  )
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -116,11 +116,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_PWMJNI_setPWMPeriodScale
 }
 
 /*
- * Class:     io_github_robolib_hal_PWMJNI
+ * Class:     io_github_robolib_jni_PWMJNI
  * Method:    allocatePWM
  * Signature: (Ljava/nio/IntBuffer;)Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_PWMJNI_allocatePWM
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_PWMJNI_allocatePWM
   (JNIEnv * env, jclass, jobject status)
 {
 	PWMJNI_LOG(logDEBUG) << "Calling PWMJNI allocatePWM";
@@ -135,11 +135,11 @@ JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_PWMJNI_allocatePWM
 }
 
 /*
- * Class:     io_github_robolib_hal_PWMJNI
+ * Class:     io_github_robolib_jni_PWMJNI
  * Method:    freePWM
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_PWMJNI_freePWM
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_PWMJNI_freePWM
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	PWMJNI_LOG(logDEBUG) << "Calling PWMJNI freePWM";
@@ -152,11 +152,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_PWMJNI_freePWM
 }
 
 /*
- * Class:     io_github_robolib_hal_PWMJNI
+ * Class:     io_github_robolib_jni_PWMJNI
  * Method:    setPWMRate
  * Signature: (DLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_PWMJNI_setPWMRate
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_PWMJNI_setPWMRate
   (JNIEnv * env, jclass, jdouble value, jobject status)
 {
 	PWMJNI_LOG(logDEBUG) << "Calling PWMJNI setPWMRate";
@@ -168,11 +168,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_PWMJNI_setPWMRate
 }
 
 /*
- * Class:     io_github_robolib_hal_PWMJNI
+ * Class:     io_github_robolib_jni_PWMJNI
  * Method:    setPWMDutyCycle
  * Signature: (Ljava/nio/ByteBuffer;DLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_PWMJNI_setPWMDutyCycle
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_PWMJNI_setPWMDutyCycle
   (JNIEnv * env, jclass, jobject id, jdouble value, jobject status)
 {
 	PWMJNI_LOG(logDEBUG) << "Calling PWMJNI setPWMDutyCycle";
@@ -186,11 +186,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_PWMJNI_setPWMDutyCycle
 }
 
 /*
- * Class:     io_github_robolib_hal_PWMJNI
+ * Class:     io_github_robolib_jni_PWMJNI
  * Method:    setPWMOutputChannel
  * Signature: (Ljava/nio/ByteBuffer;ILjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_PWMJNI_setPWMOutputChannel
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_PWMJNI_setPWMOutputChannel
   (JNIEnv * env, jclass, jobject id, jint value, jobject status)
 {
 	PWMJNI_LOG(logDEBUG) << "Calling PWMJNI setPWMOutputChannel";

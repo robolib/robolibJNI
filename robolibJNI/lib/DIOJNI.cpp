@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "Log.hpp"
 
-#include "io_github_robolib_hal_DIOJNI.h"
+#include "io_github_robolib_jni_DIOJNI.h"
 
 #include "HAL/Digital.hpp"
 
@@ -14,11 +14,11 @@ TLogLevel dioJNILogLevel = logWARNING;
     else Log().Get(level)
 
 /*
- * Class:     io_github_robolib_hal_DIOJNI
+ * Class:     io_github_robolib_jni_DIOJNI
  * Method:    initializeDigitalPort
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_DIOJNI_initializeDigitalPort
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_DIOJNI_initializeDigitalPort
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	DIOJNI_LOG(logDEBUG) << "Calling DIOJNI initializeDigitalPort";
@@ -34,11 +34,11 @@ JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_DIOJNI_initializeDigitalPor
 }
 
 /*
- * Class:     io_github_robolib_hal_DIOJNI
+ * Class:     io_github_robolib_jni_DIOJNI
  * Method:    allocateDIO
  * Signature: (Ljava/nio/ByteBuffer;BLjava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_DIOJNI_allocateDIO
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_DIOJNI_allocateDIO
   (JNIEnv * env, jclass, jobject id, jbyte value, jobject status)
 {
 	DIOJNI_LOG(logDEBUG) << "Calling DIOJNI allocateDIO";
@@ -53,11 +53,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_DIOJNI_allocateDIO
 }
 
 /*
- * Class:     io_github_robolib_hal_DIOJNI
+ * Class:     io_github_robolib_jni_DIOJNI
  * Method:    freeDIO
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_DIOJNI_freeDIO
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_DIOJNI_freeDIO
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	DIOJNI_LOG(logDEBUG) << "Calling DIOJNI freeDIO";
@@ -70,11 +70,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_DIOJNI_freeDIO
 }
 
 /*
- * Class:     io_github_robolib_hal_DIOJNI
+ * Class:     io_github_robolib_jni_DIOJNI
  * Method:    setDIO
  * Signature: (Ljava/nio/ByteBuffer;SLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_DIOJNI_setDIO
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_DIOJNI_setDIO
   (JNIEnv *env, jclass, jobject id, jshort value, jobject status)
 {
 	//DIOJNI_LOG(logDEBUG) << "Calling DIOJNI setDIO";
@@ -88,11 +88,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_DIOJNI_setDIO
 }
 
 /*
- * Class:     io_github_robolib_hal_DIOJNI
+ * Class:     io_github_robolib_jni_DIOJNI
  * Method:    getDIO
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_DIOJNI_getDIO
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_DIOJNI_getDIO
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	//DIOJNI_LOG(logDEBUG) << "Calling DIOJNI getDIO";
@@ -108,11 +108,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_DIOJNI_getDIO
 }
 
 /*
- * Class:     io_github_robolib_hal_DIOJNI
+ * Class:     io_github_robolib_jni_DIOJNI
  * Method:    getDIODirection
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_DIOJNI_getDIODirection
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_DIOJNI_getDIODirection
   (JNIEnv *env, jclass, jobject id, jobject status)
 {
 	DIOJNI_LOG(logDEBUG) << "Calling DIOJNI getDIODirection (RR upd)";
@@ -127,11 +127,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_DIOJNI_getDIODirection
 }
 
 /*
- * Class:     io_github_robolib_hal_DIOJNI
+ * Class:     io_github_robolib_jni_DIOJNI
  * Method:    pulse
  * Signature: (Ljava/nio/ByteBuffer;DLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_DIOJNI_pulse
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_DIOJNI_pulse
   (JNIEnv *env, jclass, jobject id, jdouble value, jobject status)
 {
 	DIOJNI_LOG(logDEBUG) << "Calling DIOJNI pulse (RR upd)";
@@ -145,11 +145,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_DIOJNI_pulse
 }
 
 /*
- * Class:     io_github_robolib_hal_DIOJNI
+ * Class:     io_github_robolib_jni_DIOJNI
  * Method:    isPulsing
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_DIOJNI_isPulsing
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_DIOJNI_isPulsing
   (JNIEnv *env, jclass, jobject id, jobject status)
 {
 	DIOJNI_LOG(logDEBUG) << "Calling DIOJNI isPulsing (RR upd)";
@@ -164,11 +164,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_DIOJNI_isPulsing
 }
 
 /*
- * Class:     io_github_robolib_hal_DIOJNI
+ * Class:     io_github_robolib_jni_DIOJNI
  * Method:    isAnyPulsing
  * Signature: (Ljava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_DIOJNI_isAnyPulsing
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_DIOJNI_isAnyPulsing
   (JNIEnv *env, jclass, jobject status)
 {
 	DIOJNI_LOG(logDEBUG) << "Calling DIOJNI isAnyPulsing (RR upd)";
@@ -180,11 +180,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_DIOJNI_isAnyPulsing
 }
 
 /*
- * Class:     io_github_robolib_hal_DIOJNI
+ * Class:     io_github_robolib_jni_DIOJNI
  * Method:    getLoopTiming
  * Signature: (Ljava/nio/IntBuffer;)S
  */
-JNIEXPORT jshort JNICALL Java_io_github_robolib_hal_DIOJNI_getLoopTiming
+JNIEXPORT jshort JNICALL Java_io_github_robolib_jni_DIOJNI_getLoopTiming
   (JNIEnv * env, jclass, jobject status)
 {
 	DIOJNI_LOG(logDEBUG) << "Calling DIOJNI getLoopTimeing";

@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "Log.hpp"
 
-#include "io_github_robolib_hal_RelayJNI.h"
+#include "io_github_robolib_jni_RelayJNI.h"
 
 #include "HAL/Digital.hpp"
 
@@ -14,11 +14,11 @@ TLogLevel relayJNILogLevel = logWARNING;
     else Log().Get(level)
 
 /*
- * Class:     io_github_robolib_hal_RelayJNI
+ * Class:     io_github_robolib_jni_RelayJNI
  * Method:    setRelayForward
  * Signature: (Ljava/nio/ByteBuffer;BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_RelayJNI_setRelayForward
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_RelayJNI_setRelayForward
   (JNIEnv * env, jclass, jobject id, jbyte value, jobject status)
 {
 	RELAYJNI_LOG(logDEBUG) << "Calling RELAYJNI setRelayForward";
@@ -32,11 +32,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_RelayJNI_setRelayForward
 }
 
 /*
- * Class:     io_github_robolib_hal_RelayJNI
+ * Class:     io_github_robolib_jni_RelayJNI
  * Method:    setRelayReverse
  * Signature: (Ljava/nio/ByteBuffer;BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_RelayJNI_setRelayReverse
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_RelayJNI_setRelayReverse
   (JNIEnv * env, jclass, jobject id, jbyte value, jobject status)
 {
 	RELAYJNI_LOG(logDEBUG) << "Calling RELAYJNI setRelayReverse";
@@ -50,11 +50,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_RelayJNI_setRelayReverse
 }
 
 /*
- * Class:     io_github_robolib_hal_RelayJNI
+ * Class:     io_github_robolib_jni_RelayJNI
  * Method:    getRelayForward
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_RelayJNI_getRelayForward
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_RelayJNI_getRelayForward
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	RELAYJNI_LOG(logDEBUG) << "Calling RELAYJNI getRelayForward";
@@ -69,11 +69,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_RelayJNI_getRelayForward
 }
 
 /*
- * Class:     io_github_robolib_hal_RelayJNI
+ * Class:     io_github_robolib_jni_RelayJNI
  * Method:    getRelayReverse
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_RelayJNI_getRelayReverse
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_RelayJNI_getRelayReverse
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	RELAYJNI_LOG(logDEBUG) << "Calling RELAYJNI getRelayReverse";

@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "Log.hpp"
 
-#include "io_github_robolib_hal_EncoderJNI.h"
+#include "io_github_robolib_jni_EncoderJNI.h"
 
 #include "HAL/Digital.hpp"
 
@@ -14,11 +14,11 @@ TLogLevel encoderJNILogLevel = logWARNING;
     else Log().Get(level)
 
 /*
- * Class:     io_github_robolib_hal_EncoderJNI
+ * Class:     io_github_robolib_jni_EncoderJNI
  * Method:    initializeEncoder
  * Signature: (BIBBIBBLjava/nio/IntBuffer;Ljava/nio/IntBuffer;)Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_EncoderJNI_initializeEncoder
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_EncoderJNI_initializeEncoder
   (JNIEnv * env, jclass, jbyte port_a_module, jint port_a_pin, jbyte port_a_analog_trigger, jbyte port_b_module, jint port_b_pin, jbyte port_b_analog_trigger, jbyte reverseDirection, jobject index, jobject status)
 {
 	ENCODERJNI_LOG(logDEBUG) << "Calling ENCODERJNI initializeEncoder";
@@ -45,11 +45,11 @@ JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_EncoderJNI_initializeEncode
 }
 
 /*
- * Class:     io_github_robolib_hal_EncoderJNI
+ * Class:     io_github_robolib_jni_EncoderJNI
  * Method:    freeEncoder
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_EncoderJNI_freeEncoder
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_EncoderJNI_freeEncoder
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	ENCODERJNI_LOG(logDEBUG) << "Calling ENCODERJNI freeEncoder";
@@ -62,11 +62,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_EncoderJNI_freeEncoder
 }
 
 /*
- * Class:     io_github_robolib_hal_EncoderJNI
+ * Class:     io_github_robolib_jni_EncoderJNI
  * Method:    resetEncoder
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_EncoderJNI_resetEncoder
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_EncoderJNI_resetEncoder
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	ENCODERJNI_LOG(logDEBUG) << "Calling ENCODERJNI resetEncoder";
@@ -79,11 +79,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_EncoderJNI_resetEncoder
 }
 
 /*
- * Class:     io_github_robolib_hal_EncoderJNI
+ * Class:     io_github_robolib_jni_EncoderJNI
  * Method:    getEncoder
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_EncoderJNI_getEncoder
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_EncoderJNI_getEncoder
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	ENCODERJNI_LOG(logDEBUG) << "Calling ENCODERJNI getEncoder";
@@ -98,11 +98,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_EncoderJNI_getEncoder
 }
 
 /*
- * Class:     io_github_robolib_hal_EncoderJNI
+ * Class:     io_github_robolib_jni_EncoderJNI
  * Method:    getEncoderPeriod
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)D
  */
-JNIEXPORT jdouble JNICALL Java_io_github_robolib_hal_EncoderJNI_getEncoderPeriod
+JNIEXPORT jdouble JNICALL Java_io_github_robolib_jni_EncoderJNI_getEncoderPeriod
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	ENCODERJNI_LOG(logDEBUG) << "Calling ENCODERJNI getEncoderPeriod";
@@ -117,11 +117,11 @@ JNIEXPORT jdouble JNICALL Java_io_github_robolib_hal_EncoderJNI_getEncoderPeriod
 }
 
 /*
- * Class:     io_github_robolib_hal_EncoderJNI
+ * Class:     io_github_robolib_jni_EncoderJNI
  * Method:    setEncoderMaxPeriod
  * Signature: (Ljava/nio/ByteBuffer;DLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_EncoderJNI_setEncoderMaxPeriod
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_EncoderJNI_setEncoderMaxPeriod
   (JNIEnv * env, jclass, jobject id, jdouble value, jobject status)
 {
 	ENCODERJNI_LOG(logDEBUG) << "Calling ENCODERJNI setEncoderMaxPeriod";
@@ -134,11 +134,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_EncoderJNI_setEncoderMaxPeriod
 }
 
 /*
- * Class:     io_github_robolib_hal_EncoderJNI
+ * Class:     io_github_robolib_jni_EncoderJNI
  * Method:    getEncoderStopped
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_EncoderJNI_getEncoderStopped
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_EncoderJNI_getEncoderStopped
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	ENCODERJNI_LOG(logDEBUG) << "Calling ENCODERJNI getEncoderStopped";
@@ -153,11 +153,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_EncoderJNI_getEncoderStopped
 }
 
 /*
- * Class:     io_github_robolib_hal_EncoderJNI
+ * Class:     io_github_robolib_jni_EncoderJNI
  * Method:    getEncoderDirection
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_EncoderJNI_getEncoderDirection
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_EncoderJNI_getEncoderDirection
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	ENCODERJNI_LOG(logDEBUG) << "Calling ENCODERJNI getEncoderDirection";
@@ -172,11 +172,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_EncoderJNI_getEncoderDirectio
 }
 
 /*
- * Class:     io_github_robolib_hal_EncoderJNI
+ * Class:     io_github_robolib_jni_EncoderJNI
  * Method:    setEncoderReverseDirection
  * Signature: (Ljava/nio/ByteBuffer;BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_EncoderJNI_setEncoderReverseDirection
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_EncoderJNI_setEncoderReverseDirection
   (JNIEnv * env, jclass, jobject id, jbyte value, jobject status)
 {
 	ENCODERJNI_LOG(logDEBUG) << "Calling ENCODERJNI setEncoderReverseDirection";
@@ -189,11 +189,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_EncoderJNI_setEncoderReverseDi
 }
 
 /*
- * Class:     io_github_robolib_hal_EncoderJNI
+ * Class:     io_github_robolib_jni_EncoderJNI
  * Method:    setEncoderSamplesToAverage
  * Signature: (Ljava/nio/ByteBuffer;ILjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_EncoderJNI_setEncoderSamplesToAverage
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_EncoderJNI_setEncoderSamplesToAverage
   (JNIEnv * env, jclass, jobject id, jint value, jobject status)
 {
 	ENCODERJNI_LOG(logDEBUG) << "Calling ENCODERJNI setEncoderSamplesToAverage";
@@ -206,11 +206,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_EncoderJNI_setEncoderSamplesTo
 }
 
 /*
- * Class:     io_github_robolib_hal_EncoderJNI
+ * Class:     io_github_robolib_jni_EncoderJNI
  * Method:    getEncoderSamplesToAverage
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_EncoderJNI_getEncoderSamplesToAverage
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_EncoderJNI_getEncoderSamplesToAverage
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	ENCODERJNI_LOG(logDEBUG) << "Calling ENCODERJNI getEncoderSamplesToAverage";
@@ -225,11 +225,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_EncoderJNI_getEncoderSamplesTo
 }
 
 /*
- * Class:     io_github_robolib_hal_EncoderJNI
+ * Class:     io_github_robolib_jni_EncoderJNI
  * Method:    setEncoderIndexSource
  * Signature: (Ljava/nio/ByteBuffer;IZZZLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_EncoderJNI_setEncoderIndexSource
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_EncoderJNI_setEncoderIndexSource
   (JNIEnv * env, jclass, jobject id, jint pin, jboolean analogTrigger, jboolean activeHigh, jboolean edgeSensitive, jobject status)
 {
 	ENCODERJNI_LOG(logDEBUG) << "Calling ENCODERJNI setEncoderIndexSource";

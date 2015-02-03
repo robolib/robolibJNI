@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "Log.hpp"
 
-#include "io_github_robolib_hal_SPIJNI.h"
+#include "io_github_robolib_jni_SPIJNI.h"
 
 #include "HAL/Digital.hpp"
 
@@ -15,11 +15,11 @@ TLogLevel spiJNILogLevel = logWARNING;
     else Log().Get(level)
 
 /*
- * Class:     io_github_robolib_hal_SPIJNI
+ * Class:     io_github_robolib_jni_SPIJNI
  * Method:    spiInitialize
  * Signature: (BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SPIJNI_spiInitialize
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SPIJNI_spiInitialize
   (JNIEnv * env, jclass, jbyte port, jobject status)
 {
 	SPIJNI_LOG(logDEBUG) << "Calling SPIJNI spiInitialize";
@@ -30,11 +30,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SPIJNI_spiInitialize
 }
 
 /*
- * Class:     io_github_robolib_hal_SPIJNI
+ * Class:     io_github_robolib_jni_SPIJNI
  * Method:    spiTransaction
  * Signature: (BLjava/nio/ByteBuffer;Ljava/nio/ByteBuffer;B)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_SPIJNI_spiTransaction
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_SPIJNI_spiTransaction
   (JNIEnv * env, jclass, jbyte port, jobject dataToSend, jobject dataReceived, jbyte size)
 {
 	SPIJNI_LOG(logDEBUG) << "Calling SPIJNI spiTransaction";
@@ -54,11 +54,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_SPIJNI_spiTransaction
 }
 
 /*
- * Class:     io_github_robolib_hal_SPIJNI
+ * Class:     io_github_robolib_jni_SPIJNI
  * Method:    spiWrite
  * Signature: (BLjava/nio/ByteBuffer;B)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_SPIJNI_spiWrite
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_SPIJNI_spiWrite
   (JNIEnv * env, jclass, jbyte port, jobject dataToSend, jbyte size)
 {
 	SPIJNI_LOG(logDEBUG) << "Calling SPIJNI spiWrite";
@@ -76,11 +76,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_SPIJNI_spiWrite
 
 
 /*
- * Class:     io_github_robolib_hal_SPIJNI
+ * Class:     io_github_robolib_jni_SPIJNI
  * Method:    spiRead
  * Signature: (BLjava/nio/ByteBuffer;B)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_SPIJNI_spiRead
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_SPIJNI_spiRead
   (JNIEnv * env, jclass, jbyte port, jobject dataReceived, jbyte size)
 {
 	SPIJNI_LOG(logDEBUG) << "Calling SPIJNI spiRead";
@@ -96,11 +96,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_SPIJNI_spiRead
 
 
 /*
- * Class:     io_github_robolib_hal_SPIJNI
+ * Class:     io_github_robolib_jni_SPIJNI
  * Method:    spiClose
  * Signature: (B)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SPIJNI_spiClose
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SPIJNI_spiClose
   (JNIEnv *, jclass, jbyte port)
 {
 	SPIJNI_LOG(logDEBUG) << "Calling SPIJNI spiClose";
@@ -109,11 +109,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SPIJNI_spiClose
 }
 
 /*
- * Class:     io_github_robolib_hal_SPIJNI
+ * Class:     io_github_robolib_jni_SPIJNI
  * Method:    spiSetSpeed
  * Signature: (BI)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SPIJNI_spiSetSpeed
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SPIJNI_spiSetSpeed
   (JNIEnv *, jclass, jbyte port, jint speed)
 {
 	SPIJNI_LOG(logDEBUG) << "Calling SPIJNI spiSetSpeed";
@@ -123,11 +123,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SPIJNI_spiSetSpeed
 }
 
 /*
- * Class:     io_github_robolib_hal_SPIJNI
+ * Class:     io_github_robolib_jni_SPIJNI
  * Method:    spiSetOpts
  * Signature: (BIII)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SPIJNI_spiSetOpts
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SPIJNI_spiSetOpts
   (JNIEnv *, jclass, jbyte port, jint msb_first, jint sample_on_trailing, jint clk_idle_high)
 {
 	SPIJNI_LOG(logDEBUG) << "Calling SPIJNI spiSetOpts";
@@ -139,11 +139,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SPIJNI_spiSetOpts
 }
 
 /*
- * Class:     io_github_robolib_hal_SPIJNI
+ * Class:     io_github_robolib_jni_SPIJNI
  * Method:    spiSetChipSelectActiveHigh
  * Signature: (BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SPIJNI_spiSetChipSelectActiveHigh
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SPIJNI_spiSetChipSelectActiveHigh
   (JNIEnv * env, jclass, jbyte port, jobject status)
 {
 	SPIJNI_LOG(logDEBUG) << "Calling SPIJNI spiSetCSActiveHigh";
@@ -154,11 +154,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SPIJNI_spiSetChipSelectActiveH
 }
 
 /*
- * Class:     io_github_robolib_hal_SPIJNI
+ * Class:     io_github_robolib_jni_SPIJNI
  * Method:    spiSetChipSelectActiveLow
  * Signature: (BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SPIJNI_spiSetChipSelectActiveLow
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SPIJNI_spiSetChipSelectActiveLow
   (JNIEnv * env, jclass, jbyte port, jobject status)
 {
 	SPIJNI_LOG(logDEBUG) << "Calling SPIJNI spiSetCSActiveLow";

@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "Log.hpp"
 
-#include "io_github_robolib_hal_InterruptJNI.h"
+#include "io_github_robolib_jni_InterruptJNI.h"
 #include "HAL/Interrupts.hpp"
 
 TLogLevel interruptJNILogLevel = logERROR;
@@ -15,11 +15,11 @@ TLogLevel interruptJNILogLevel = logERROR;
 static JavaVM *jvm;
 
 /*
- * Class:     io_github_robolib_hal_InterruptJNI
+ * Class:     io_github_robolib_jni_InterruptJNI
  * Method:    initializeInterruptJVM
  * Signature: (Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_InterruptJNI_initializeInterruptJVM
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_InterruptJNI_initializeInterruptJVM
   (JNIEnv * env, jclass, jobject status)
 {
 	//This method should be called once to setup the JVM
@@ -32,11 +32,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_InterruptJNI_initializeInterru
 
 
 /*
- * Class:     io_github_robolib_hal_InterruptJNI
+ * Class:     io_github_robolib_jni_InterruptJNI
  * Method:    initializeInterrupts
  * Signature: (IBLjava/nio/IntBuffer;)Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_InterruptJNI_initializeInterrupts
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_InterruptJNI_initializeInterrupts
   (JNIEnv * env, jclass, jint interruptIndex, jbyte watcher, jobject status)
 {
 	INTERRUPTJNI_LOG(logDEBUG) << "Calling INTERRUPTJNI initializeInterrupts";
@@ -56,11 +56,11 @@ JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_InterruptJNI_initializeInte
 
 
 /*
- * Class:     io_github_robolib_hal_InterruptJNI
+ * Class:     io_github_robolib_jni_InterruptJNI
  * Method:    cleanInterrupts
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_InterruptJNI_cleanInterrupts
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_InterruptJNI_cleanInterrupts
   (JNIEnv * env, jclass, jobject interrupt_pointer, jobject status)
 {
 	INTERRUPTJNI_LOG(logDEBUG) << "Calling INTERRUPTJNI cleanInterrupts";
@@ -75,11 +75,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_InterruptJNI_cleanInterrupts
 }
 
 /*
- * Class:     io_github_robolib_hal_InterruptJNI
+ * Class:     io_github_robolib_jni_InterruptJNI
  * Method:    waitForInterrupt
  * Signature: (Ljava/nio/ByteBuffer;DLjava/nio/IntBuffer;)V
  */
-JNIEXPORT int JNICALL Java_io_github_robolib_hal_InterruptJNI_waitForInterrupt
+JNIEXPORT int JNICALL Java_io_github_robolib_jni_InterruptJNI_waitForInterrupt
   (JNIEnv * env, jclass, jobject interrupt_pointer, jdouble timeout, jboolean ignorePrevious, jobject status)
 {
 	INTERRUPTJNI_LOG(logDEBUG) << "Calling INTERRUPTJNI waitForInterrupt";
@@ -96,11 +96,11 @@ JNIEXPORT int JNICALL Java_io_github_robolib_hal_InterruptJNI_waitForInterrupt
 }
 
 /*
- * Class:     io_github_robolib_hal_InterruptJNI
+ * Class:     io_github_robolib_jni_InterruptJNI
  * Method:    enableInterrupts
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_InterruptJNI_enableInterrupts
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_InterruptJNI_enableInterrupts
   (JNIEnv * env, jclass, jobject interrupt_pointer, jobject status)
 {
 	INTERRUPTJNI_LOG(logDEBUG) << "Calling INTERRUPTJNI enableInterrupts";
@@ -115,11 +115,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_InterruptJNI_enableInterrupts
 }
 
 /*
- * Class:     io_github_robolib_hal_InterruptJNI
+ * Class:     io_github_robolib_jni_InterruptJNI
  * Method:    disableInterrupts
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_InterruptJNI_disableInterrupts
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_InterruptJNI_disableInterrupts
   (JNIEnv * env, jclass, jobject interrupt_pointer, jobject status)
 {
 	INTERRUPTJNI_LOG(logDEBUG) << "Calling INTERRUPTJNI disableInterrupts";
@@ -134,11 +134,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_InterruptJNI_disableInterrupts
 }
 
 /*
- * Class:     io_github_robolib_hal_InterruptJNI
+ * Class:     io_github_robolib_jni_InterruptJNI
  * Method:    readRisingTimestamp
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)D
  */
-JNIEXPORT jdouble JNICALL Java_io_github_robolib_hal_InterruptJNI_readRisingTimestamp
+JNIEXPORT jdouble JNICALL Java_io_github_robolib_jni_InterruptJNI_readRisingTimestamp
   (JNIEnv * env, jclass, jobject interrupt_pointer, jobject status)
 {
 	INTERRUPTJNI_LOG(logDEBUG) << "Calling INTERRUPTJNI readRisingTimestamp";
@@ -154,11 +154,11 @@ JNIEXPORT jdouble JNICALL Java_io_github_robolib_hal_InterruptJNI_readRisingTime
 }
 
 /*
- * Class:     io_github_robolib_hal_InterruptJNI
+ * Class:     io_github_robolib_jni_InterruptJNI
  * Method:    readFallingTimestamp
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)D
  */
-JNIEXPORT jdouble JNICALL Java_io_github_robolib_hal_InterruptJNI_readFallingTimestamp
+JNIEXPORT jdouble JNICALL Java_io_github_robolib_jni_InterruptJNI_readFallingTimestamp
   (JNIEnv * env, jclass, jobject interrupt_pointer, jobject status)
 {
 	INTERRUPTJNI_LOG(logDEBUG) << "Calling INTERRUPTJNI readFallingTimestamp";
@@ -174,11 +174,11 @@ JNIEXPORT jdouble JNICALL Java_io_github_robolib_hal_InterruptJNI_readFallingTim
 }
 
 /*
- * Class:     io_github_robolib_hal_InterruptJNI
+ * Class:     io_github_robolib_jni_InterruptJNI
  * Method:    requestInterrupts
  * Signature: (Ljava/nio/ByteBuffer;BIBLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_InterruptJNI_requestInterrupts
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_InterruptJNI_requestInterrupts
   (JNIEnv * env, jclass, jobject interrupt_pointer, jbyte routing_module, jint routing_pin, jbyte routing_analog_trigger, jobject status)
 {
 	INTERRUPTJNI_LOG(logDEBUG) << "Calling INTERRUPTJNI requestInterrupts";
@@ -249,11 +249,11 @@ void interruptHandler(uint32_t mask, void *data) {
 }
 
 /*
- * Class:     io_github_robolib_hal_InterruptJNI
+ * Class:     io_github_robolib_jni_InterruptJNI
  * Method:    attachInterruptHandler
  * Signature: (Ljava/nio/ByteBuffer;Ledu/wpi/first/wpilibj/hal/InterruptJNI/InterruptHandlerFunction;Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_InterruptJNI_attachInterruptHandler
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_InterruptJNI_attachInterruptHandler
   (JNIEnv * env, jclass, jobject interrupt_pointer, jobject handler, jobject param, jobject status)
 {
 	INTERRUPTJNI_LOG(logDEBUG) << "Calling INTERRUPTJNI attachInterruptHandler";
@@ -298,11 +298,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_InterruptJNI_attachInterruptHa
 }
 
 /*
- * Class:     io_github_robolib_hal_InterruptJNI
+ * Class:     io_github_robolib_jni_InterruptJNI
  * Method:    setInterruptUpSourceEdge
  * Signature: (Ljava/nio/ByteBuffer;BBLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_InterruptJNI_setInterruptUpSourceEdge
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_InterruptJNI_setInterruptUpSourceEdge
   (JNIEnv * env, jclass, jobject interrupt_pointer, jbyte risingEdge, jbyte fallingEdge, jobject status)
 {
 	INTERRUPTJNI_LOG(logDEBUG) << "Calling INTERRUPTJNI setInterruptUpSourceEdge";

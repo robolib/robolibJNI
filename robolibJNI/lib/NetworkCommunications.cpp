@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "Log.hpp"
 
-#include "io_github_robolib_communication_NetworkCommunications.h"
+#include "io_github_robolib_jni_NetworkCommunications.h"
 #include "HAL/HAL.hpp"
 //#include "NetworkCommunication/FRCComm.h"
 //#include "NetworkCommunication/UsageReporting.h"
@@ -17,75 +17,75 @@ TLogLevel netCommLogLevel = logWARNING;
 
 
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    FRC_NetworkCommunication_nAICalibration_getLSBWeight
  * Signature: (IILjava/lang/Integer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunications_AICalibrationGetLSBWeight
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_NetworkCommunications_AICalibrationGetLSBWeight
   (JNIEnv *, jclass, jint, jint, jobject)
 {
 	assert(false);
 	return 0;
 }
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    FRC_NetworkCommunication_nAICalibration_getOffset
  * Signature: (IILjava/lang/Integer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunications_AICalibrationGetOffset
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_NetworkCommunications_AICalibrationGetOffset
   (JNIEnv *, jclass, jint, jint, jobject)
 {
 	assert(false);
 	return 0;
 }
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    getTargetClass
  * Signature: ()I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunications_getTargetClass
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_NetworkCommunications_getTargetClass
   (JNIEnv *, jclass)
 {
 	assert(false);
 	return 0;
 }
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    FRC_NetworkCommunication_nLoadOut_getModulePresence
  * Signature: (IB)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunications_LoadOutGetModulePresence
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_NetworkCommunications_LoadOutGetModulePresence
   (JNIEnv *, jclass, jint, jbyte)
 {
 	assert(false);
 	return 0;
 }
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    FRC_NetworkCommunication_nLoadOut_getTargetClass
  * Signature: ()I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunications_LoadOutGetTargetClass
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_NetworkCommunications_LoadOutGetTargetClass
   (JNIEnv *, jclass)
 {
 	assert(false);
 }
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    report
  * Signature: (IBBLjava/lang/String;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunications_report
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_NetworkCommunications_report
   (JNIEnv *, jclass, jint, jbyte, jbyte, jstring)
 {
 	assert(false);
 }
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    getFPGAHardwareVersion
  * Signature: (Ljava/nio/ShortBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_communication_NetworkCommunications_getFPGAHardwareVersion
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_NetworkCommunications_getFPGAHardwareVersion
   (JNIEnv *, jclass, jobject, jobject)
 {
 	assert(false);
@@ -121,135 +121,135 @@ jfieldID FPGAChecksum2FieldID;
 jfieldID FPGAChecksum3FieldID;
 jfieldID versionDataFieldID;
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    setErrorData
  * Signature: (Ljava/lang/String;II)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunications_setErrorData
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_NetworkCommunications_setErrorData
   (JNIEnv *, jclass, jstring, jint, jint)
 {
 	assert(false);
 }
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    overrideIOConfig
  * Signature: (Ljava/lang/String;I)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunications_overrideIOConfig
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_NetworkCommunications_overrideIOConfig
   (JNIEnv *, jclass, jstring, jint)
 {
 	assert(false);
 }
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    signalResyncActionDone
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_communication_NetworkCommunications_signalResyncActionDone
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_NetworkCommunications_signalResyncActionDone
   (JNIEnv *, jclass)
 {
 	assert(false);
 }
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    setNewDataOccurRef
  * Signature: (I)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_communication_NetworkCommunications_setNewDataOccurRef
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_NetworkCommunications_setNewDataOccurRef
   (JNIEnv *, jclass, jint)
 {
 	assert(false);
 }
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    setResyncOccurRef
  * Signature: (I)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_communication_NetworkCommunications_setResyncOccurRef
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_NetworkCommunications_setResyncOccurRef
   (JNIEnv *, jclass, jint)
 {
 	assert(false);
 }
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    FRC_NetworkCommunication_getVersionString
  * Signature: (Ljava/nio/ByteBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_communication_NetworkCommunications_GetVersionString
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_NetworkCommunications_GetVersionString
   (JNIEnv *, jclass, jobject)
 {
 	assert(false);
 }
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    FRC_NetworkCommunication_observeUserProgramStarting
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_communication_NetworkCommunications_ObserveUserProgramStarting
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_NetworkCommunications_ObserveUserProgramStarting
   (JNIEnv *, jclass)
 {
 	HALNetworkCommunicationObserveUserProgramStarting();
 }
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    FRC_NetworkCommunication_observeUserProgramDisabled
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_communication_NetworkCommunications_ObserveUserProgramDisabled
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_NetworkCommunications_ObserveUserProgramDisabled
   (JNIEnv *, jclass)
 {
 	HALNetworkCommunicationObserveUserProgramDisabled();
 }
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    FRC_NetworkCommunication_observeUserProgramAutonomous
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_communication_NetworkCommunications_ObserveUserProgramAutonomous
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_NetworkCommunications_ObserveUserProgramAutonomous
   (JNIEnv *, jclass)
 {
 	HALNetworkCommunicationObserveUserProgramAutonomous();
 }
 
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    FRC_NetworkCommunication_observeUserProgramTeleop
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_communication_NetworkCommunications_ObserveUserProgramTeleop
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_NetworkCommunications_ObserveUserProgramTeleop
   (JNIEnv *, jclass)
 {
 	HALNetworkCommunicationObserveUserProgramTeleop();
 }
 
 /*
- * Class:     io_github_robolib_communication_FRC_NetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRC_NetworkCommunicationsLibrary
  * Method:    FRC_NetworkCommunication_observeUserProgramTest
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_communication_NetworkCommunications_ObserveUserProgramTest
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_NetworkCommunications_ObserveUserProgramTest
   (JNIEnv *, jclass)
 {
 	HALNetworkCommunicationObserveUserProgramTest();
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    FRCNetworkCommunicationReserve
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_communication_NetworkCommunications_NetworkCommunicationReserve
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_NetworkCommunications_NetworkCommunicationReserve
   (JNIEnv *, jclass)
 {
 	assert(1 == HALInitialize(0));
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    NativeHALGetControlWord
  * Signature: ()I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunications_HALGetRobotStatus
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_NetworkCommunications_HALGetRobotStatus
   (JNIEnv *, jclass)
 {
 	NETCOMM_LOG(logDEBUG) << "Calling HAL Control Word";
@@ -259,11 +259,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunication
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    NativeHALGetAllianceStation
  * Signature: ()I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunications_HALGetAllianceStation
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_NetworkCommunications_HALGetAllianceStation
   (JNIEnv *, jclass)
 {
 	NETCOMM_LOG(logDEBUG) << "Calling HAL Alliance Station";
@@ -273,11 +273,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunication
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    HALGetJoystickAxes
  * Signature: (B)[S
  */
-JNIEXPORT jshortArray JNICALL Java_io_github_robolib_communication_NetworkCommunications_HALGetJoystickAxes
+JNIEXPORT jshortArray JNICALL Java_io_github_robolib_jni_NetworkCommunications_HALGetJoystickAxes
   (JNIEnv * env, jclass, jbyte joystickNum)
 {
 	NETCOMM_LOG(logDEBUG) << "Calling HALJoystickAxes";
@@ -291,11 +291,11 @@ JNIEXPORT jshortArray JNICALL Java_io_github_robolib_communication_NetworkCommun
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    HALGetJoystickPOVs
  * Signature: (B)[S
  */
-JNIEXPORT jshortArray JNICALL Java_io_github_robolib_communication_NetworkCommunications_HALGetJoystickPOVs
+JNIEXPORT jshortArray JNICALL Java_io_github_robolib_jni_NetworkCommunications_HALGetJoystickPOVs
   (JNIEnv * env, jclass, jbyte joystickNum)
 {
 	NETCOMM_LOG(logDEBUG) << "Calling HALJoystickPOVs";
@@ -309,11 +309,11 @@ JNIEXPORT jshortArray JNICALL Java_io_github_robolib_communication_NetworkCommun
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    HALGetJoystickButtons
  * Signature: (B)S
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunications_HALGetJoystickButtons
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_NetworkCommunications_HALGetJoystickButtons
   (JNIEnv * env, jclass, jbyte joystickNum, jobject count)
 {
 	NETCOMM_LOG(logDEBUG) << "Calling HALJoystickButtons";
@@ -328,11 +328,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunication
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    HALSetJoystickOutputs
  * Signature: (BISS)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunications_HALSetJoystickOutputs
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_NetworkCommunications_HALSetJoystickOutputs
   (JNIEnv *, jclass, jbyte port, jint outputs, jshort leftRumble, jshort rightRumble)
 {
 	NETCOMM_LOG(logDEBUG) << "Calling HALSetJoystickOutputs on port " << port;
@@ -342,11 +342,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunication
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    setNewDataSem
  * Signature: ([B)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_communication_NetworkCommunications_setNewDataSem
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_NetworkCommunications_setNewDataSem
   (JNIEnv * env, jclass, jobject id )
 {
 	MULTIWAIT_ID* javaId = (MULTIWAIT_ID*)env->GetDirectBufferAddress(id);
@@ -355,11 +355,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_communication_NetworkCommunication
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    JNIValueParameterTest
  * Signature: (ZBCSIJFD)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_communication_NetworkCommunications_JNIValueParameterTest
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_NetworkCommunications_JNIValueParameterTest
   (JNIEnv *, jclass, jboolean booleanParam, jbyte byteParam, jchar charParam, jshort shortParam, jint intParam, jlong longParam, jfloat floatParam, jdouble doubleParam)
 {
 	NETCOMM_LOG(logDEBUG) << "Boolean: " << booleanParam;
@@ -373,11 +373,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_communication_NetworkCommunication
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    JNIValueReturnBooleanTest
  * Signature: (Z)Z
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_communication_NetworkCommunications_JNIValueReturnBooleanTest
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_NetworkCommunications_JNIValueReturnBooleanTest
   (JNIEnv *, jclass, jboolean booleanParam )
 {
 	NETCOMM_LOG(logDEBUG) << "Boolean: " << booleanParam;
@@ -385,11 +385,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_communication_NetworkCommunica
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    JNIValueReturnByteTest
  * Signature: (B)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_communication_NetworkCommunications_JNIValueReturnByteTest
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_NetworkCommunications_JNIValueReturnByteTest
   (JNIEnv *, jclass, jbyte byteParam)
 {
 	NETCOMM_LOG(logDEBUG) << "Byte: " << byteParam;
@@ -397,11 +397,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_communication_NetworkCommunicatio
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    JNIValueReturnCharTest
  * Signature: (C)C
  */
-JNIEXPORT jchar JNICALL Java_io_github_robolib_communication_NetworkCommunications_JNIValueReturnCharTest
+JNIEXPORT jchar JNICALL Java_io_github_robolib_jni_NetworkCommunications_JNIValueReturnCharTest
   (JNIEnv *, jclass, jchar charParam)
 {
 	NETCOMM_LOG(logDEBUG) << "Char: " << charParam;
@@ -409,11 +409,11 @@ JNIEXPORT jchar JNICALL Java_io_github_robolib_communication_NetworkCommunicatio
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    JNIValueReturnShortTest
  * Signature: (S)S
  */
-JNIEXPORT jshort JNICALL Java_io_github_robolib_communication_NetworkCommunications_JNIValueReturnShortTest
+JNIEXPORT jshort JNICALL Java_io_github_robolib_jni_NetworkCommunications_JNIValueReturnShortTest
   (JNIEnv *, jclass, jshort shortParam)
 {
 	NETCOMM_LOG(logDEBUG) << "Short: " << shortParam;
@@ -421,11 +421,11 @@ JNIEXPORT jshort JNICALL Java_io_github_robolib_communication_NetworkCommunicati
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    JNIValueReturnIntTest
  * Signature: (I)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunications_JNIValueReturnIntTest
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_NetworkCommunications_JNIValueReturnIntTest
   (JNIEnv *, jclass, jint intParam)
 {
 	NETCOMM_LOG(logDEBUG) << "Int: " << intParam;
@@ -433,11 +433,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunication
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    JNIValueReturnLongTest
  * Signature: (J)J
  */
-JNIEXPORT jlong JNICALL Java_io_github_robolib_communication_NetworkCommunications_JNIValueReturnLongTest
+JNIEXPORT jlong JNICALL Java_io_github_robolib_jni_NetworkCommunications_JNIValueReturnLongTest
   (JNIEnv *, jclass, jlong longParam)
 {
 	NETCOMM_LOG(logDEBUG) << "Long: " << longParam;
@@ -445,11 +445,11 @@ JNIEXPORT jlong JNICALL Java_io_github_robolib_communication_NetworkCommunicatio
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    JNIValueReturnFloatTest
  * Signature: (F)F
  */
-JNIEXPORT jfloat JNICALL Java_io_github_robolib_communication_NetworkCommunications_JNIValueReturnFloatTest
+JNIEXPORT jfloat JNICALL Java_io_github_robolib_jni_NetworkCommunications_JNIValueReturnFloatTest
   (JNIEnv *, jclass, jfloat floatParam)
 {
 	NETCOMM_LOG(logDEBUG) << "Float: " << floatParam;
@@ -457,11 +457,11 @@ JNIEXPORT jfloat JNICALL Java_io_github_robolib_communication_NetworkCommunicati
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    JNIValueReturnDoubleTest
  * Signature: (D)D
  */
-JNIEXPORT jdouble JNICALL Java_io_github_robolib_communication_NetworkCommunications_JNIValueReturnDoubleTest
+JNIEXPORT jdouble JNICALL Java_io_github_robolib_jni_NetworkCommunications_JNIValueReturnDoubleTest
   (JNIEnv *, jclass, jdouble doubleParam)
 {
 	NETCOMM_LOG(logDEBUG) << "Double: " << doubleParam;
@@ -469,11 +469,11 @@ JNIEXPORT jdouble JNICALL Java_io_github_robolib_communication_NetworkCommunicat
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    JNIObjectReturnString
  * Signature: (Ljava/lang/String;)Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_io_github_robolib_communication_NetworkCommunications_JNIObjectReturnStringTest
+JNIEXPORT jstring JNICALL Java_io_github_robolib_jni_NetworkCommunications_JNIObjectReturnStringTest
   (JNIEnv * env, jclass, jstring stringParam)
 {
 	const char * stringParamLocal = env->GetStringUTFChars(stringParam, NULL);
@@ -486,11 +486,11 @@ JNIEXPORT jstring JNICALL Java_io_github_robolib_communication_NetworkCommunicat
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    JNIObjectReturnByteBufferTest
  * Signature: (Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_communication_NetworkCommunications_JNIObjectReturnByteBufferTest
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_NetworkCommunications_JNIObjectReturnByteBufferTest
   (JNIEnv * env, jclass, jobject byteArrayIn )
 {
 	jbyte * byteArray = (jbyte*)env->GetDirectBufferAddress(byteArrayIn);
@@ -512,11 +512,11 @@ JNIEXPORT jobject JNICALL Java_io_github_robolib_communication_NetworkCommunicat
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    JNIObjectAndParamReturnIntBufferTest
  * Signature: (Ljava/nio/IntBuffer;)Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_communication_NetworkCommunications_JNIObjectAndParamReturnIntBufferTest
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_NetworkCommunications_JNIObjectAndParamReturnIntBufferTest
   (JNIEnv * env, jclass, jobject intArrayIn)
 {
 	jint * intArray = (jint*)env->GetDirectBufferAddress(intArrayIn);
@@ -543,12 +543,12 @@ JNIEXPORT jobject JNICALL Java_io_github_robolib_communication_NetworkCommunicat
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
 
  * Method:    HALGetMatchTime
  * Signature: ()F
  */
-JNIEXPORT jfloat JNICALL Java_io_github_robolib_communication_NetworkCommunications_HALGetMatchTime
+JNIEXPORT jfloat JNICALL Java_io_github_robolib_jni_NetworkCommunications_HALGetMatchTime
   (JNIEnv * env, jclass)
 {
 	jfloat matchTime;
@@ -557,11 +557,11 @@ JNIEXPORT jfloat JNICALL Java_io_github_robolib_communication_NetworkCommunicati
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    HALGetSystemActive
  * Signature: (Ljava/nio/IntBuffer;)Z
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_communication_NetworkCommunications_HALGetSystemActive
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_NetworkCommunications_HALGetSystemActive
   (JNIEnv * env, jclass, jobject status)
 {
 	jint * statusPtr = (jint*)env->GetDirectBufferAddress(status);
@@ -569,11 +569,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_communication_NetworkCommunica
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    HALGetBrownedOut
  * Signature: (Ljava/nio/IntBuffer;)Z
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_communication_NetworkCommunications_HALGetBrownedOut
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_NetworkCommunications_HALGetBrownedOut
   (JNIEnv * env, jclass, jobject status)
 {
 	jint * statusPtr = (jint*)env->GetDirectBufferAddress(status);
@@ -581,11 +581,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_communication_NetworkCommunica
 }
 
 /*
- * Class:     io_github_robolib_communication_FRCNetworkCommunicationsLibrary
+ * Class:     io_github_robolib_jni_FRCNetworkCommunicationsLibrary
  * Method:    HALSetErrorData
  * Signature: (Ljava/lang/String;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_communication_NetworkCommunications_HALSetErrorData
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_NetworkCommunications_HALSetErrorData
   (JNIEnv * env, jclass, jstring error)
 {
   const char * errorStr = env->GetStringUTFChars(error, NULL);

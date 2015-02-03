@@ -365,7 +365,7 @@ static float floatp_value(float *obj) {
 extern "C" {
 #endif
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1doublep(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_new_1doublep(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   double *result = 0 ;
   
@@ -377,7 +377,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1doublep(JNI
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_copy_1doublep(JNIEnv *jenv, jclass jcls, jdouble jarg1) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_copy_1doublep(JNIEnv *jenv, jclass jcls, jdouble jarg1) {
   jlong jresult = 0 ;
   double arg1 ;
   double *result = 0 ;
@@ -391,7 +391,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_copy_1doublep(JN
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1doublep(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_delete_1doublep(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   double *arg1 = (double *) 0 ;
   
   (void)jenv;
@@ -401,7 +401,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1doublep(J
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_doublep_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jdouble jarg2) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_doublep_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jdouble jarg2) {
   double *arg1 = (double *) 0 ;
   double arg2 ;
   
@@ -413,7 +413,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_doublep_1assign(J
 }
 
 
-SWIGEXPORT jdouble JNICALL Java_io_github_robolib_hal_CanTalonJNI_doublep_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jdouble JNICALL Java_io_github_robolib_jni_CanTalonJNI_doublep_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jdouble jresult = 0 ;
   double *arg1 = (double *) 0 ;
   double result;
@@ -427,7 +427,7 @@ SWIGEXPORT jdouble JNICALL Java_io_github_robolib_hal_CanTalonJNI_doublep_1value
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1intp(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_new_1intp(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   int *result = 0 ;
   
@@ -439,7 +439,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1intp(JNIEnv
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_copy_1intp(JNIEnv *jenv, jclass jcls, jint jarg1) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_copy_1intp(JNIEnv *jenv, jclass jcls, jint jarg1) {
   jlong jresult = 0 ;
   int arg1 ;
   int *result = 0 ;
@@ -453,7 +453,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_copy_1intp(JNIEn
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1intp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_delete_1intp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   int *arg1 = (int *) 0 ;
   
   (void)jenv;
@@ -463,7 +463,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1intp(JNIE
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_intp_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_intp_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   int *arg1 = (int *) 0 ;
   int arg2 ;
   
@@ -475,7 +475,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_intp_1assign(JNIE
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_intp_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_intp_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jint jresult = 0 ;
   int *arg1 = (int *) 0 ;
   int result;
@@ -489,7 +489,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_intp_1value(JNIEn
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1uint32_1tp(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_new_1uint32_1tp(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   uint32_t *result = 0 ;
   
@@ -501,7 +501,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1uint32_1tp(
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_copy_1uint32_1tp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_copy_1uint32_1tp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   uint32_t arg1 ;
   uint32_t *argp1 ;
@@ -521,7 +521,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_copy_1uint32_1tp
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1uint32_1tp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_delete_1uint32_1tp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   uint32_t *arg1 = (uint32_t *) 0 ;
   
   (void)jenv;
@@ -531,7 +531,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1uint32_1t
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_uint32_1tp_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_uint32_1tp_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   uint32_t *arg1 = (uint32_t *) 0 ;
   uint32_t arg2 ;
   uint32_t *argp2 ;
@@ -549,7 +549,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_uint32_1tp_1assig
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_uint32_1tp_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_uint32_1tp_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   uint32_t *arg1 = (uint32_t *) 0 ;
   uint32_t result;
@@ -563,7 +563,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_uint32_1tp_1valu
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1int32_1tp(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_new_1int32_1tp(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   int32_t *result = 0 ;
   
@@ -575,7 +575,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1int32_1tp(J
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_copy_1int32_1tp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_copy_1int32_1tp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   int32_t arg1 ;
   int32_t *argp1 ;
@@ -595,7 +595,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_copy_1int32_1tp(
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1int32_1tp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_delete_1int32_1tp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   int32_t *arg1 = (int32_t *) 0 ;
   
   (void)jenv;
@@ -605,7 +605,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1int32_1tp
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_int32_1tp_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_int32_1tp_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   int32_t *arg1 = (int32_t *) 0 ;
   int32_t arg2 ;
   int32_t *argp2 ;
@@ -623,7 +623,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_int32_1tp_1assign
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_int32_1tp_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_int32_1tp_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   int32_t *arg1 = (int32_t *) 0 ;
   int32_t result;
@@ -637,7 +637,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_int32_1tp_1value
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1uint8_1tp(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_new_1uint8_1tp(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   uint8_t *result = 0 ;
   
@@ -649,7 +649,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1uint8_1tp(J
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_copy_1uint8_1tp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_copy_1uint8_1tp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   uint8_t arg1 ;
   uint8_t *argp1 ;
@@ -669,7 +669,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_copy_1uint8_1tp(
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1uint8_1tp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_delete_1uint8_1tp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   uint8_t *arg1 = (uint8_t *) 0 ;
   
   (void)jenv;
@@ -679,7 +679,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1uint8_1tp
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_uint8_1tp_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_uint8_1tp_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   uint8_t *arg1 = (uint8_t *) 0 ;
   uint8_t arg2 ;
   uint8_t *argp2 ;
@@ -697,7 +697,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_uint8_1tp_1assign
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_uint8_1tp_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_uint8_1tp_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   uint8_t *arg1 = (uint8_t *) 0 ;
   uint8_t result;
@@ -711,7 +711,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_uint8_1tp_1value
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1CTR_1Codep(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_new_1CTR_1Codep(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   CTR_Code *result = 0 ;
   
@@ -723,7 +723,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1CTR_1Codep(
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_copy_1CTR_1Codep(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_copy_1CTR_1Codep(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   CTR_Code arg1 ;
   CTR_Code *argp1 ;
@@ -743,7 +743,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_copy_1CTR_1Codep
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1CTR_1Codep(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_delete_1CTR_1Codep(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   CTR_Code *arg1 = (CTR_Code *) 0 ;
   
   (void)jenv;
@@ -753,7 +753,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1CTR_1Code
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_CTR_1Codep_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_CTR_1Codep_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   CTR_Code *arg1 = (CTR_Code *) 0 ;
   CTR_Code arg2 ;
   CTR_Code *argp2 ;
@@ -771,7 +771,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_CTR_1Codep_1assig
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CTR_1Codep_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CTR_1Codep_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   CTR_Code *arg1 = (CTR_Code *) 0 ;
   CTR_Code result;
@@ -785,7 +785,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CTR_1Codep_1valu
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1floatp(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_new_1floatp(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   float *result = 0 ;
   
@@ -797,7 +797,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1floatp(JNIE
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_copy_1floatp(JNIEnv *jenv, jclass jcls, jfloat jarg1) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_copy_1floatp(JNIEnv *jenv, jclass jcls, jfloat jarg1) {
   jlong jresult = 0 ;
   float arg1 ;
   float *result = 0 ;
@@ -811,7 +811,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_copy_1floatp(JNI
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1floatp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_delete_1floatp(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   float *arg1 = (float *) 0 ;
   
   (void)jenv;
@@ -821,7 +821,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1floatp(JN
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_floatp_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_floatp_1assign(JNIEnv *jenv, jclass jcls, jlong jarg1, jfloat jarg2) {
   float *arg1 = (float *) 0 ;
   float arg2 ;
   
@@ -833,7 +833,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_floatp_1assign(JN
 }
 
 
-SWIGEXPORT jfloat JNICALL Java_io_github_robolib_hal_CanTalonJNI_floatp_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jfloat JNICALL Java_io_github_robolib_jni_CanTalonJNI_floatp_1value(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jfloat jresult = 0 ;
   float *arg1 = (float *) 0 ;
   float result;
@@ -847,7 +847,7 @@ SWIGEXPORT jfloat JNICALL Java_io_github_robolib_hal_CanTalonJNI_floatp_1value(J
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1CtreCanNode(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_new_1CtreCanNode(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   UINT8 arg1 ;
   UINT8 *argp1 ;
@@ -867,7 +867,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1CtreCanNode
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1CtreCanNode(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_delete_1CtreCanNode(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   CtreCanNode *arg1 = (CtreCanNode *) 0 ;
   
   (void)jenv;
@@ -877,7 +877,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1CtreCanNo
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CtreCanNode_1GetDeviceNumber(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CtreCanNode_1GetDeviceNumber(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   CtreCanNode *arg1 = (CtreCanNode *) 0 ;
   UINT8 result;
@@ -892,7 +892,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CtreCanNode_1Get
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kDefaultControlPeriodMs_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kDefaultControlPeriodMs_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -904,7 +904,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kDef
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1CanTalonSRX_1_1SWIG_10(JNIEnv *jenv, jclass jcls, jint jarg1, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_new_1CanTalonSRX_1_1SWIG_10(JNIEnv *jenv, jclass jcls, jint jarg1, jint jarg2) {
   jlong jresult = 0 ;
   int arg1 ;
   int arg2 ;
@@ -920,7 +920,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1CanTalonSRX
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1CanTalonSRX_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jint jarg1) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_new_1CanTalonSRX_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jint jarg1) {
   jlong jresult = 0 ;
   int arg1 ;
   CanTalonSRX *result = 0 ;
@@ -934,7 +934,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1CanTalonSRX
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1CanTalonSRX_1_1SWIG_12(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_new_1CanTalonSRX_1_1SWIG_12(JNIEnv *jenv, jclass jcls) {
   jlong jresult = 0 ;
   CanTalonSRX *result = 0 ;
   
@@ -946,7 +946,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_new_1CanTalonSRX
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1CanTalonSRX(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_delete_1CanTalonSRX(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   
   (void)jenv;
@@ -956,7 +956,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_delete_1CanTalonS
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1Set(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jdouble jarg2) {
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   double arg2 ;
   
@@ -969,7 +969,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set(
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kMode_1DutyCycle_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kMode_1DutyCycle_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -981,7 +981,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kMod
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kMode_1PositionCloseLoop_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kMode_1PositionCloseLoop_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -993,7 +993,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kMod
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kMode_1VelocityCloseLoop_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kMode_1VelocityCloseLoop_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1005,7 +1005,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kMod
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kMode_1CurrentCloseLoop_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kMode_1CurrentCloseLoop_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1017,7 +1017,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kMod
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kMode_1VoltCompen_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kMode_1VoltCompen_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1029,7 +1029,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kMod
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kMode_1SlaveFollower_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kMode_1SlaveFollower_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1041,7 +1041,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kMod
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kMode_1NoDrive_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kMode_1NoDrive_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1053,7 +1053,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kMod
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kLimitSwitchOverride_1UseDefaultsFromFlash_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kLimitSwitchOverride_1UseDefaultsFromFlash_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1065,7 +1065,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kLim
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kLimitSwitchOverride_1DisableFwd_1DisableRev_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kLimitSwitchOverride_1DisableFwd_1DisableRev_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1077,7 +1077,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kLim
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kLimitSwitchOverride_1DisableFwd_1EnableRev_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kLimitSwitchOverride_1DisableFwd_1EnableRev_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1089,7 +1089,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kLim
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kLimitSwitchOverride_1EnableFwd_1DisableRev_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kLimitSwitchOverride_1EnableFwd_1DisableRev_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1101,7 +1101,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kLim
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kLimitSwitchOverride_1EnableFwd_1EnableRev_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kLimitSwitchOverride_1EnableFwd_1EnableRev_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1113,7 +1113,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kLim
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kBrakeOverride_1UseDefaultsFromFlash_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kBrakeOverride_1UseDefaultsFromFlash_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1125,7 +1125,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kBra
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kBrakeOverride_1OverrideCoast_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kBrakeOverride_1OverrideCoast_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1137,7 +1137,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kBra
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kBrakeOverride_1OverrideBrake_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kBrakeOverride_1OverrideBrake_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1149,7 +1149,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kBra
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kFeedbackDev_1DigitalQuadEnc_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kFeedbackDev_1DigitalQuadEnc_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1161,7 +1161,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kFee
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kFeedbackDev_1AnalogPot_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kFeedbackDev_1AnalogPot_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1173,7 +1173,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kFee
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kFeedbackDev_1AnalogEncoder_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kFeedbackDev_1AnalogEncoder_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1185,7 +1185,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kFee
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kFeedbackDev_1CountEveryRisingEdge_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kFeedbackDev_1CountEveryRisingEdge_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1197,7 +1197,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kFee
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kFeedbackDev_1CountEveryFallingEdge_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kFeedbackDev_1CountEveryFallingEdge_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1209,7 +1209,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kFee
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kFeedbackDev_1PosIsPulseWidth_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kFeedbackDev_1PosIsPulseWidth_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1221,7 +1221,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kFee
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kProfileSlotSelect_1Slot0_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kProfileSlotSelect_1Slot0_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1233,7 +1233,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kPro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kProfileSlotSelect_1Slot1_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kProfileSlotSelect_1Slot1_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1245,7 +1245,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kPro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kStatusFrame_1General_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kStatusFrame_1General_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1257,7 +1257,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kSta
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kStatusFrame_1Feedback_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kStatusFrame_1Feedback_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1269,7 +1269,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kSta
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kStatusFrame_1Encoder_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kStatusFrame_1Encoder_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1281,7 +1281,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kSta
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kStatusFrame_1AnalogTempVbat_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1kStatusFrame_1AnalogTempVbat_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   int result;
   
@@ -1293,7 +1293,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1kSta
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileParamSlot0_1P_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileParamSlot0_1P_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1305,7 +1305,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileParamSlot0_1I_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileParamSlot0_1I_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1317,7 +1317,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileParamSlot0_1D_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileParamSlot0_1D_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1329,7 +1329,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileParamSlot0_1F_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileParamSlot0_1F_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1341,7 +1341,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileParamSlot0_1IZone_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileParamSlot0_1IZone_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1353,7 +1353,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileParamSlot0_1CloseLoopRampRate_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileParamSlot0_1CloseLoopRampRate_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1365,7 +1365,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileParamSlot1_1P_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileParamSlot1_1P_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1377,7 +1377,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileParamSlot1_1I_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileParamSlot1_1I_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1389,7 +1389,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileParamSlot1_1D_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileParamSlot1_1D_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1401,7 +1401,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileParamSlot1_1F_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileParamSlot1_1F_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1413,7 +1413,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileParamSlot1_1IZone_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileParamSlot1_1IZone_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1425,7 +1425,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileParamSlot1_1CloseLoopRampRate_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileParamSlot1_1CloseLoopRampRate_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1437,7 +1437,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileParamSoftLimitForThreshold_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileParamSoftLimitForThreshold_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1449,7 +1449,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileParamSoftLimitRevThreshold_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileParamSoftLimitRevThreshold_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1461,7 +1461,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileParamSoftLimitForEnable_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileParamSoftLimitForEnable_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1473,7 +1473,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileParamSoftLimitRevEnable_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileParamSoftLimitRevEnable_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1485,7 +1485,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eOnBoot_1BrakeMode_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eOnBoot_1BrakeMode_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1497,7 +1497,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eOnB
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eOnBoot_1LimitSwitch_1Forward_1NormallyClosed_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eOnBoot_1LimitSwitch_1Forward_1NormallyClosed_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1509,7 +1509,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eOnB
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eOnBoot_1LimitSwitch_1Reverse_1NormallyClosed_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eOnBoot_1LimitSwitch_1Reverse_1NormallyClosed_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1521,7 +1521,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eOnB
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eOnBoot_1LimitSwitch_1Forward_1Disable_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eOnBoot_1LimitSwitch_1Forward_1Disable_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1533,7 +1533,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eOnB
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eOnBoot_1LimitSwitch_1Reverse_1Disable_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eOnBoot_1LimitSwitch_1Reverse_1Disable_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1545,7 +1545,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eOnB
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFault_1OverTemp_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eFault_1OverTemp_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1557,7 +1557,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFau
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFault_1UnderVoltage_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eFault_1UnderVoltage_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1569,7 +1569,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFau
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFault_1ForLim_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eFault_1ForLim_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1581,7 +1581,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFau
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFault_1RevLim_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eFault_1RevLim_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1593,7 +1593,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFau
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFault_1HardwareFailure_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eFault_1HardwareFailure_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1605,7 +1605,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFau
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFault_1ForSoftLim_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eFault_1ForSoftLim_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1617,7 +1617,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFau
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFault_1RevSoftLim_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eFault_1RevSoftLim_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1629,7 +1629,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFau
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eStckyFault_1OverTemp_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eStckyFault_1OverTemp_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1641,7 +1641,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eStc
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eStckyFault_1UnderVoltage_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eStckyFault_1UnderVoltage_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1653,7 +1653,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eStc
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eStckyFault_1ForLim_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eStckyFault_1ForLim_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1665,7 +1665,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eStc
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eStckyFault_1RevLim_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eStckyFault_1RevLim_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1677,7 +1677,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eStc
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eStckyFault_1ForSoftLim_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eStckyFault_1ForSoftLim_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1689,7 +1689,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eStc
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eStckyFault_1RevSoftLim_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eStckyFault_1RevSoftLim_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1701,7 +1701,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eStc
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eAppliedThrottle_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eAppliedThrottle_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1713,7 +1713,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eApp
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eCloseLoopErr_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eCloseLoopErr_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1725,7 +1725,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eClo
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFeedbackDeviceSelect_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eFeedbackDeviceSelect_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1737,7 +1737,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFee
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eRevMotDuringCloseLoopEn_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eRevMotDuringCloseLoopEn_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1749,7 +1749,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eRev
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eModeSelect_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eModeSelect_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1761,7 +1761,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eMod
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eProfileSlotSelect_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eProfileSlotSelect_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1773,7 +1773,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePro
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eRampThrottle_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eRampThrottle_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1785,7 +1785,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eRam
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eRevFeedbackSensor_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eRevFeedbackSensor_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1797,7 +1797,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eRev
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eLimitSwitchEn_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eLimitSwitchEn_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1809,7 +1809,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eLim
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eLimitSwitchClosedFor_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eLimitSwitchClosedFor_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1821,7 +1821,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eLim
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eLimitSwitchClosedRev_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eLimitSwitchClosedRev_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1833,7 +1833,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eLim
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eSensorPosition_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eSensorPosition_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1845,7 +1845,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eSen
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eSensorVelocity_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eSensorVelocity_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1857,7 +1857,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eSen
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eCurrent_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eCurrent_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1869,7 +1869,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eCur
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eBrakeIsEnabled_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eBrakeIsEnabled_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1881,7 +1881,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eBra
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eEncPosition_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eEncPosition_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1893,7 +1893,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eEnc
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eEncVel_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eEncVel_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1905,7 +1905,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eEnc
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eEncIndexRiseEvents_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eEncIndexRiseEvents_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1917,7 +1917,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eEnc
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eQuadApin_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eQuadApin_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1929,7 +1929,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eQua
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eQuadBpin_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eQuadBpin_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1941,7 +1941,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eQua
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eQuadIdxpin_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eQuadIdxpin_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1953,7 +1953,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eQua
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eAnalogInWithOv_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eAnalogInWithOv_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1965,7 +1965,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eAna
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eAnalogInVel_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eAnalogInVel_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1977,7 +1977,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eAna
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eTemp_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eTemp_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -1989,7 +1989,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eTem
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eBatteryV_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eBatteryV_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -2001,7 +2001,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eBat
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eResetCount_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eResetCount_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -2013,7 +2013,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eRes
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eResetFlags_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eResetFlags_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -2025,7 +2025,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eRes
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFirmVers_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eFirmVers_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -2037,7 +2037,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eFir
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eSettingsChanged_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eSettingsChanged_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -2049,7 +2049,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eSet
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eQuadFilterEn_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1eQuadFilterEn_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -2061,7 +2061,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1eQua
 }
 
 
-SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePidIaccum_1get(JNIEnv *jenv, jclass jcls) {
+SWIGEXPORT jint JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1ePidIaccum_1get(JNIEnv *jenv, jclass jcls) {
   jint jresult = 0 ;
   CanTalonSRX::_param_t result;
   
@@ -2073,7 +2073,7 @@ SWIGEXPORT jint JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ePid
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetParam(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jdouble jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetParam(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jdouble jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   CanTalonSRX::param_t arg2 ;
@@ -2092,7 +2092,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1RequestParam(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1RequestParam(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   CanTalonSRX::param_t arg2 ;
@@ -2109,7 +2109,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Req
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetParamResponse(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetParamResponse(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   CanTalonSRX::param_t arg2 ;
@@ -2132,7 +2132,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetParamResponseInt32(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetParamResponseInt32(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jlong jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   CanTalonSRX::param_t arg2 ;
@@ -2155,7 +2155,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetPgain(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jdouble jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetPgain(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jdouble jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   unsigned int arg2 ;
@@ -2174,7 +2174,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetIgain(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jdouble jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetIgain(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jdouble jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   unsigned int arg2 ;
@@ -2193,7 +2193,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetDgain(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jdouble jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetDgain(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jdouble jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   unsigned int arg2 ;
@@ -2212,7 +2212,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetFgain(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jdouble jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetFgain(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jdouble jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   unsigned int arg2 ;
@@ -2231,7 +2231,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetIzone(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jint jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetIzone(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jint jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   unsigned int arg2 ;
@@ -2250,7 +2250,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetCloseLoopRampRate(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jint jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetCloseLoopRampRate(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jint jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   unsigned int arg2 ;
@@ -2269,7 +2269,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetSensorPosition(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetSensorPosition(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int arg2 ;
@@ -2286,7 +2286,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetForwardSoftLimit(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetForwardSoftLimit(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int arg2 ;
@@ -2303,7 +2303,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetReverseSoftLimit(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetReverseSoftLimit(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int arg2 ;
@@ -2320,7 +2320,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetForwardSoftEnable(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetForwardSoftEnable(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int arg2 ;
@@ -2337,7 +2337,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetReverseSoftEnable(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetReverseSoftEnable(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int arg2 ;
@@ -2354,7 +2354,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetPgain(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetPgain(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   unsigned int arg2 ;
@@ -2377,7 +2377,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetIgain(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetIgain(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   unsigned int arg2 ;
@@ -2400,7 +2400,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetDgain(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetDgain(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   unsigned int arg2 ;
@@ -2423,7 +2423,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetFgain(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetFgain(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   unsigned int arg2 ;
@@ -2446,7 +2446,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetIzone(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetIzone(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   unsigned int arg2 ;
@@ -2469,7 +2469,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetCloseLoopRampRate(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetCloseLoopRampRate(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   unsigned int arg2 ;
@@ -2492,7 +2492,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetForwardSoftLimit(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetForwardSoftLimit(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2513,7 +2513,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetReverseSoftLimit(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetReverseSoftLimit(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2534,7 +2534,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetForwardSoftEnable(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetForwardSoftEnable(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2555,7 +2555,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetReverseSoftEnable(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetReverseSoftEnable(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2576,7 +2576,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetStatusFrameRate(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetStatusFrameRate(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2, jlong jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   unsigned int arg2 ;
@@ -2595,7 +2595,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1ClearStickyFaults(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1ClearStickyFaults(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   CTR_Code result;
@@ -2610,7 +2610,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Cle
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetFault_1OverTemp(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetFault_1OverTemp(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2631,7 +2631,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetFault_1UnderVoltage(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetFault_1UnderVoltage(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2652,7 +2652,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetFault_1ForLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetFault_1ForLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2673,7 +2673,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetFault_1RevLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetFault_1RevLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2694,7 +2694,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetFault_1HardwareFailure(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetFault_1HardwareFailure(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2715,7 +2715,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetFault_1ForSoftLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetFault_1ForSoftLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2736,7 +2736,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetFault_1RevSoftLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetFault_1RevSoftLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2757,7 +2757,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetStckyFault_1OverTemp(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetStckyFault_1OverTemp(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2778,7 +2778,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetStckyFault_1UnderVoltage(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetStckyFault_1UnderVoltage(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2799,7 +2799,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetStckyFault_1ForLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetStckyFault_1ForLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2820,7 +2820,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetStckyFault_1RevLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetStckyFault_1RevLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2841,7 +2841,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetStckyFault_1ForSoftLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetStckyFault_1ForSoftLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2862,7 +2862,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetStckyFault_1RevSoftLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetStckyFault_1RevSoftLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2883,7 +2883,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetAppliedThrottle(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetAppliedThrottle(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2904,7 +2904,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetCloseLoopErr(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetCloseLoopErr(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2925,7 +2925,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetFeedbackDeviceSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetFeedbackDeviceSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2946,7 +2946,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetModeSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetModeSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2967,7 +2967,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetLimitSwitchEn(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetLimitSwitchEn(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -2988,7 +2988,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetLimitSwitchClosedFor(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetLimitSwitchClosedFor(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -3009,7 +3009,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetLimitSwitchClosedRev(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetLimitSwitchClosedRev(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -3030,7 +3030,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetSensorPosition(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetSensorPosition(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -3051,7 +3051,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetSensorVelocity(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetSensorVelocity(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -3072,7 +3072,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetCurrent(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetCurrent(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   double *arg2 = 0 ;
@@ -3093,7 +3093,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetBrakeIsEnabled(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetBrakeIsEnabled(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -3114,7 +3114,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetEncPosition(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetEncPosition(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -3135,7 +3135,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetEncVel(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetEncVel(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -3156,7 +3156,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetEncIndexRiseEvents(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetEncIndexRiseEvents(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -3177,7 +3177,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetQuadApin(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetQuadApin(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -3198,7 +3198,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetQuadBpin(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetQuadBpin(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -3219,7 +3219,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetQuadIdxpin(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetQuadIdxpin(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -3240,7 +3240,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetAnalogInWithOv(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetAnalogInWithOv(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -3261,7 +3261,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetAnalogInVel(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetAnalogInVel(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -3282,7 +3282,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetTemp(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetTemp(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   double *arg2 = 0 ;
@@ -3303,7 +3303,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetBatteryV(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetBatteryV(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   double *arg2 = 0 ;
@@ -3324,7 +3324,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetResetCount(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetResetCount(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -3345,7 +3345,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetResetFlags(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetResetFlags(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -3366,7 +3366,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1GetFirmVers(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1GetFirmVers(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jlong jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int *arg2 = 0 ;
@@ -3387,7 +3387,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetDemand(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetDemand(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int arg2 ;
@@ -3404,7 +3404,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetOverrideLimitSwitchEn(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetOverrideLimitSwitchEn(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int arg2 ;
@@ -3421,7 +3421,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetFeedbackDeviceSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetFeedbackDeviceSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int arg2 ;
@@ -3438,7 +3438,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetRevMotDuringCloseLoopEn(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetRevMotDuringCloseLoopEn(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int arg2 ;
@@ -3455,7 +3455,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetOverrideBrakeType(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetOverrideBrakeType(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int arg2 ;
@@ -3472,7 +3472,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetModeSelect_1_1SWIG_10(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetModeSelect_1_1SWIG_10(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int arg2 ;
@@ -3489,7 +3489,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetModeSelect_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jint jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetModeSelect_1_1SWIG_11(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2, jint jarg3) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int arg2 ;
@@ -3508,7 +3508,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetProfileSlotSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetProfileSlotSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int arg2 ;
@@ -3525,7 +3525,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetRampThrottle(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetRampThrottle(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int arg2 ;
@@ -3542,7 +3542,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SetRevFeedbackSensor(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SetRevFeedbackSensor(JNIEnv *jenv, jclass jcls, jlong jarg1, jobject jarg1_, jint jarg2) {
   jlong jresult = 0 ;
   CanTalonSRX *arg1 = (CanTalonSRX *) 0 ;
   int arg2 ;
@@ -3559,7 +3559,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Create(JNIEnv *jenv, jclass jcls, jint jarg1, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1Create(JNIEnv *jenv, jclass jcls, jint jarg1, jint jarg2) {
   jlong jresult = 0 ;
   int arg1 ;
   int arg2 ;
@@ -3575,7 +3575,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Cre
 }
 
 
-SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Destroy(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT void JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1Destroy(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   void *arg1 = (void *) 0 ;
   
   (void)jenv;
@@ -3585,7 +3585,7 @@ SWIGEXPORT void JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Dest
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1SetParam(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2, jdouble jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1SetParam(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2, jdouble jarg3) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int arg2 ;
@@ -3603,7 +3603,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1RequestParam(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1RequestParam(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int arg2 ;
@@ -3619,7 +3619,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Req
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetParamResponse(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2, jlong jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetParamResponse(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2, jlong jarg3) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int arg2 ;
@@ -3637,7 +3637,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetParamResponseInt32(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2, jlong jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetParamResponseInt32(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2, jlong jarg3) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int arg2 ;
@@ -3655,7 +3655,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1SetStatusFrameRate(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jlong jarg3) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1SetStatusFrameRate(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2, jlong jarg3) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   unsigned int arg2 ;
@@ -3673,7 +3673,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1ClearStickyFaults(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1ClearStickyFaults(JNIEnv *jenv, jclass jcls, jlong jarg1) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   CTR_Code result;
@@ -3687,7 +3687,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Cle
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetFault_1OverTemp(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetFault_1OverTemp(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3703,7 +3703,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetFault_1UnderVoltage(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetFault_1UnderVoltage(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3719,7 +3719,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetFault_1ForLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetFault_1ForLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3735,7 +3735,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetFault_1RevLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetFault_1RevLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3751,7 +3751,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetFault_1HardwareFailure(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetFault_1HardwareFailure(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3767,7 +3767,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetFault_1ForSoftLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetFault_1ForSoftLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3783,7 +3783,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetFault_1RevSoftLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetFault_1RevSoftLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3799,7 +3799,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetStckyFault_1OverTemp(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetStckyFault_1OverTemp(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3815,7 +3815,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetStckyFault_1UnderVoltage(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetStckyFault_1UnderVoltage(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3831,7 +3831,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetStckyFault_1ForLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetStckyFault_1ForLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3847,7 +3847,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetStckyFault_1RevLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetStckyFault_1RevLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3863,7 +3863,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetStckyFault_1ForSoftLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetStckyFault_1ForSoftLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3879,7 +3879,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetStckyFault_1RevSoftLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetStckyFault_1RevSoftLim(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3895,7 +3895,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetAppliedThrottle(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetAppliedThrottle(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3911,7 +3911,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetCloseLoopErr(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetCloseLoopErr(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3927,7 +3927,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetFeedbackDeviceSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetFeedbackDeviceSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3943,7 +3943,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetModeSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetModeSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3959,7 +3959,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetLimitSwitchEn(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetLimitSwitchEn(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3975,7 +3975,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetLimitSwitchClosedFor(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetLimitSwitchClosedFor(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -3991,7 +3991,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetLimitSwitchClosedRev(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetLimitSwitchClosedRev(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -4007,7 +4007,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetSensorPosition(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetSensorPosition(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -4023,7 +4023,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetSensorVelocity(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetSensorVelocity(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -4039,7 +4039,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetCurrent(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetCurrent(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   double *arg2 = (double *) 0 ;
@@ -4055,7 +4055,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetBrakeIsEnabled(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetBrakeIsEnabled(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -4071,7 +4071,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetEncPosition(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetEncPosition(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -4087,7 +4087,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetEncVel(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetEncVel(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -4103,7 +4103,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetEncIndexRiseEvents(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetEncIndexRiseEvents(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -4119,7 +4119,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetQuadApin(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetQuadApin(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -4135,7 +4135,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetQuadBpin(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetQuadBpin(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -4151,7 +4151,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetQuadIdxpin(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetQuadIdxpin(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -4167,7 +4167,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetAnalogInWithOv(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetAnalogInWithOv(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -4183,7 +4183,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetAnalogInVel(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetAnalogInVel(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -4199,7 +4199,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetTemp(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetTemp(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   double *arg2 = (double *) 0 ;
@@ -4215,7 +4215,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetBatteryV(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetBatteryV(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   double *arg2 = (double *) 0 ;
@@ -4231,7 +4231,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetResetCount(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetResetCount(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -4247,7 +4247,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetResetFlags(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetResetFlags(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -4263,7 +4263,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1GetFirmVers(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1GetFirmVers(JNIEnv *jenv, jclass jcls, jlong jarg1, jlong jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int *arg2 = (int *) 0 ;
@@ -4279,7 +4279,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Get
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1SetDemand(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1SetDemand(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int arg2 ;
@@ -4295,7 +4295,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1SetOverrideLimitSwitchEn(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1SetOverrideLimitSwitchEn(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int arg2 ;
@@ -4311,7 +4311,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1SetFeedbackDeviceSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1SetFeedbackDeviceSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int arg2 ;
@@ -4327,7 +4327,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1SetRevMotDuringCloseLoopEn(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1SetRevMotDuringCloseLoopEn(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int arg2 ;
@@ -4343,7 +4343,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1SetOverrideBrakeType(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1SetOverrideBrakeType(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int arg2 ;
@@ -4359,7 +4359,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1SetModeSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1SetModeSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int arg2 ;
@@ -4375,7 +4375,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1SetProfileSlotSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1SetProfileSlotSelect(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int arg2 ;
@@ -4391,7 +4391,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1SetRampThrottle(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1SetRampThrottle(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int arg2 ;
@@ -4407,7 +4407,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1SetRevFeedbackSensor(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_c_1TalonSRX_1SetRevFeedbackSensor(JNIEnv *jenv, jclass jcls, jlong jarg1, jint jarg2) {
   jlong jresult = 0 ;
   void *arg1 = (void *) 0 ;
   int arg2 ;
@@ -4423,7 +4423,7 @@ SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_c_1TalonSRX_1Set
 }
 
 
-SWIGEXPORT jlong JNICALL Java_io_github_robolib_hal_CanTalonJNI_CanTalonSRX_1SWIGUpcast(JNIEnv *jenv, jclass jcls, jlong jarg1) {
+SWIGEXPORT jlong JNICALL Java_io_github_robolib_jni_CanTalonJNI_CanTalonSRX_1SWIGUpcast(JNIEnv *jenv, jclass jcls, jlong jarg1) {
     jlong baseptr = 0;
     (void)jenv;
     (void)jcls;

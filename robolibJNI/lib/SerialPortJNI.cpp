@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "Log.hpp"
 
-#include "io_github_robolib_hal_SerialPortJNI.h"
+#include "io_github_robolib_jni_SerialPortJNI.h"
 
 #include "HAL/SerialPort.hpp"
 
@@ -14,11 +14,11 @@ TLogLevel serialJNILogLevel = logWARNING;
     else Log().Get(level)
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialInitializePort
  * Signature: (BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialInitializePort
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialInitializePort
   (JNIEnv * env, jclass, jbyte port, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Calling Serial Initialize";
@@ -29,11 +29,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialInitialize
 }
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialSetBaudRate
  * Signature: (BILjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetBaudRate
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialSetBaudRate
   (JNIEnv * env, jclass, jbyte port, jint rate, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Setting Serial Baud Rate";
@@ -44,11 +44,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetBaudRat
 }
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialSetDataBits
  * Signature: (BBLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetDataBits
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialSetDataBits
   (JNIEnv * env, jclass, jbyte port, jbyte bits, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Setting Serial Data Bits";
@@ -59,11 +59,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetDataBit
 }
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialSetParity
  * Signature: (BBLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetParity
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialSetParity
   (JNIEnv * env, jclass, jbyte port, jbyte parity, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Setting Serial Parity";
@@ -74,11 +74,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetParity
 }
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialSetStopBits
  * Signature: (BBLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetStopBits
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialSetStopBits
   (JNIEnv * env, jclass, jbyte port, jbyte bits, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Setting Serial Stop Bits";
@@ -89,11 +89,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetStopBit
 }
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialSetWriteMode
  * Signature: (BBLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetWriteMode
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialSetWriteMode
   (JNIEnv * env, jclass, jbyte port, jbyte mode, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Setting Serial Write Mode";
@@ -104,11 +104,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetWriteMo
 }
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialSetFlowControl
  * Signature: (BBLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetFlowControl
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialSetFlowControl
   (JNIEnv * env, jclass, jbyte port, jbyte flow, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Setting Serial Flow Control";
@@ -119,11 +119,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetFlowCon
 }
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialSetTimeout
  * Signature: (BFLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetTimeout
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialSetTimeout
   (JNIEnv * env, jclass, jbyte port, jfloat timeout, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Setting Serial Timeout";
@@ -134,11 +134,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetTimeout
 }
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialEnableTermination
  * Signature: (BCLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialEnableTermination
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialEnableTermination
   (JNIEnv * env, jclass, jbyte port, jchar terminator, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Setting Serial Enable Termination";
@@ -149,11 +149,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialEnableTerm
 }
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialDisableTermination
  * Signature: (BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialDisableTermination
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialDisableTermination
   (JNIEnv * env, jclass, jbyte port, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Setting Serial Disable termination";
@@ -163,11 +163,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialDisableTer
 }
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialSetReadBufferSize
  * Signature: (BILjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetReadBufferSize
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialSetReadBufferSize
   (JNIEnv * env, jclass, jbyte port, jint size, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Setting Serial Read Buffer Size";
@@ -178,11 +178,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetReadBuf
 }
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialSetWriteBufferSize
  * Signature: (BILjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetWriteBufferSize
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialSetWriteBufferSize
   (JNIEnv * env, jclass, jbyte port, jint size, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Setting Serial Write Buffer Size";
@@ -193,11 +193,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialSetWriteBu
 }
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialGetBytesRecieved
  * Signature: (BLjava/nio/IntBuffer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialGetBytesRecieved
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialGetBytesRecieved
   (JNIEnv * env, jclass, jbyte port, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Serial Get Bytes Received";
@@ -208,11 +208,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialGetBytesRe
 }
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialRead
  * Signature: (BLjava/nio/ByteBuffer;ILjava/nio/IntBuffer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialRead
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialRead
   (JNIEnv * env, jclass, jbyte port, jobject dataReceived, jint size, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Serial Read";
@@ -226,11 +226,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialRead
 }
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialWrite
  * Signature: (BLjava/nio/ByteBuffer;ILjava/nio/IntBuffer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialWrite
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialWrite
   (JNIEnv * env, jclass, jbyte port, jobject dataToSend, jint size, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Serial Write";
@@ -246,11 +246,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialWrite
 }
 	
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialFlush
  * Signature: (BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialFlush
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialFlush
   (JNIEnv * env, jclass, jbyte port, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Serial Flush";
@@ -260,11 +260,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialFlush
 }
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialClear
  * Signature: (BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialClear
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialClear
   (JNIEnv * env, jclass, jbyte port, jobject status)
 {
   	SERIALJNI_LOG(logDEBUG) << "Serial Clear";
@@ -274,11 +274,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialClear
 }
 
 /*
- * Class:     io_github_robolib_hal_SerialPortJNI
+ * Class:     io_github_robolib_jni_SerialPortJNI
  * Method:    serialClose
  * Signature: (BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_SerialPortJNI_serialClose
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_SerialPortJNI_serialClose
   (JNIEnv * env, jclass, jbyte port, jobject status)
 {
 	SERIALJNI_LOG(logDEBUG) << "Serial Close";
