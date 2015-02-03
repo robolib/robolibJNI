@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "Log.hpp"
 
-#include "io_github_robolib_hal_CANJNI.h"
+#include "io_github_robolib_jni_CANJNI.h"
 
 #include "HAL/CAN.hpp"
 #include "NetworkCommunication/CANSessionMux.h"
@@ -20,7 +20,7 @@ TLogLevel canJNILogLevel = logERROR;
  * Method:    FRCNetworkCommunicationCANSessionMuxSendMessage
  * Signature: (ILjava/nio/ByteBuffer;ILjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CANJNI_CANSessionMuxSendMessage
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CANJNI_CANSessionMuxSendMessage
   (JNIEnv * env, jclass, jint messageID, jobject data, jint periodMs, jobject status)
 {
     CANJNI_LOG(logDEBUG) << "Calling CANJNI FRCNetworkCommunicationCANSessionMuxSendMessage";
@@ -64,7 +64,7 @@ static uint8_t buffer[8];
  * Method:    FRCNetworkCommunicationCANSessionMuxReceiveMessage
  * Signature: (Ljava/nio/IntBuffer;ILjava/nio/ByteBuffer;Ljava/nio/IntBuffer;)Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_CANJNI_CANSessionMuxReceiveMessage
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_CANJNI_CANSessionMuxReceiveMessage
 	(JNIEnv * env, jclass, jobject messageID, jint messageIDMask, jobject timeStamp, jobject status)
 {
     CANJNI_LOG(logDEBUG) << "Calling CANJNI FRCNetworkCommunicationCANSessionMuxReceiveMessage";

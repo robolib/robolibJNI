@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "Log.hpp"
 
-#include "io_github_robolib_hal_AnalogJNI.h"
+#include "io_github_robolib_jni_AnalogJNI.h"
 
 #include "HAL/Analog.hpp"
 
@@ -14,11 +14,11 @@ TLogLevel analogJNILogLevel = logWARNING;
 	else Log().Get(level)
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    initializeAnalogInputPort
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_AnalogJNI_initializeAnalogInputPort
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_AnalogJNI_initializeAnalogInputPort
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -33,11 +33,11 @@ JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_AnalogJNI_initializeAnalogI
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    initializeAnalogOutputPort
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_AnalogJNI_initializeAnalogOutputPort
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_AnalogJNI_initializeAnalogOutputPort
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -52,11 +52,11 @@ JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_AnalogJNI_initializeAnalogO
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    checkAnalogModule
  * Signature: (B)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_AnalogJNI_checkAnalogModule
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_AnalogJNI_checkAnalogModule
   (JNIEnv *, jclass, jbyte value)
 {
 	//ANALOGJNI_LOG(logDEBUG) << "Module = " << (jint)value;
@@ -66,11 +66,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_AnalogJNI_checkAnalogModule
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    checkAnalogInputChannel
  * Signature: (I)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_AnalogJNI_checkAnalogInputChannel
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_AnalogJNI_checkAnalogInputChannel
   (JNIEnv *, jclass, jint value)
 {
 	//ANALOGJNI_LOG(logDEBUG) << "Channel = " << value;
@@ -80,11 +80,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_AnalogJNI_checkAnalogInputCha
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    checkAnalogOutputChannel
  * Signature: (I)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_AnalogJNI_checkAnalogOutputChannel
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_AnalogJNI_checkAnalogOutputChannel
   (JNIEnv *, jclass, jint value)
 {
 	//ANALOGJNI_LOG(logDEBUG) << "Channel = " << value;
@@ -94,11 +94,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_AnalogJNI_checkAnalogOutputCh
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    setAnalogOutput
  * Signature: (Ljava/nio/ByteBuffer;DLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAnalogOutput
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_AnalogJNI_setAnalogOutput
   (JNIEnv * env, jclass, jobject id, jdouble voltage, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -107,11 +107,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAnalogOutput
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAnalogOutput
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)D
  */
-JNIEXPORT jdouble JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogOutput
+JNIEXPORT jdouble JNICALL Java_io_github_robolib_jni_AnalogJNI_getAnalogOutput
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -120,11 +120,11 @@ JNIEXPORT jdouble JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogOutput
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    setAnalogSampleRate
  * Signature: (DLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAnalogSampleRate
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_AnalogJNI_setAnalogSampleRate
   (JNIEnv * env, jclass, jdouble value, jobject status)
 {
 	ANALOGJNI_LOG(logDEBUG) << "SampleRate = " << value;
@@ -134,11 +134,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAnalogSampleRate
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAnalogSampleRate
  * Signature: (Ljava/nio/IntBuffer;)D
  */
-JNIEXPORT jdouble JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogSampleRate
+JNIEXPORT jdouble JNICALL Java_io_github_robolib_jni_AnalogJNI_getAnalogSampleRate
   (JNIEnv * env, jclass, jobject status)
 {
 	jint * statusPtr = (jint*)env->GetDirectBufferAddress(status);
@@ -149,11 +149,11 @@ JNIEXPORT jdouble JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogSampleRa
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    setAnalogAverageBits
  * Signature: (Ljava/nio/ByteBuffer;ILjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAnalogAverageBits
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_AnalogJNI_setAnalogAverageBits
   (JNIEnv * env, jclass, jobject id, jint value, jobject status)
 {
 	ANALOGJNI_LOG(logDEBUG) << "AverageBits = " << value;
@@ -165,11 +165,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAnalogAverageBits
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAnalogAverageBits
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogAverageBits
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_AnalogJNI_getAnalogAverageBits
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -182,11 +182,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogAverageBits
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    setAnalogOversampleBits
  * Signature: (Ljava/nio/ByteBuffer;ILjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAnalogOversampleBits
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_AnalogJNI_setAnalogOversampleBits
   (JNIEnv * env, jclass, jobject id, jint value, jobject status)
 {
 	ANALOGJNI_LOG(logDEBUG) << "OversampleBits = " << value;
@@ -198,11 +198,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAnalogOversampleB
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAnalogOversampleBits
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogOversampleBits
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_AnalogJNI_getAnalogOversampleBits
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -215,11 +215,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogOversampleB
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAnalogValue
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)S
  */
-JNIEXPORT jshort JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogValue
+JNIEXPORT jshort JNICALL Java_io_github_robolib_jni_AnalogJNI_getAnalogValue
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -232,11 +232,11 @@ JNIEXPORT jshort JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogValue
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAnalogAverageValue
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogAverageValue
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_AnalogJNI_getAnalogAverageValue
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -249,11 +249,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogAverageValu
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAnalogVoltsToValue
  * Signature: (Ljava/nio/ByteBuffer;DLjava/nio/IntBuffer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogVoltsToValue
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_AnalogJNI_getAnalogVoltsToValue
   (JNIEnv * env, jclass, jobject id, jdouble voltageValue, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -267,11 +267,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogVoltsToValu
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAnalogVoltage
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)D
  */
-JNIEXPORT jdouble JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogVoltage
+JNIEXPORT jdouble JNICALL Java_io_github_robolib_jni_AnalogJNI_getAnalogVoltage
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -284,11 +284,11 @@ JNIEXPORT jdouble JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogVoltage
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAnalogAverageVoltage
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)D
  */
-JNIEXPORT jdouble JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogAverageVoltage
+JNIEXPORT jdouble JNICALL Java_io_github_robolib_jni_AnalogJNI_getAnalogAverageVoltage
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -301,11 +301,11 @@ JNIEXPORT jdouble JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogAverageV
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAnalogLSBWeight
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogLSBWeight
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_AnalogJNI_getAnalogLSBWeight
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -319,11 +319,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogLSBWeight
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAnalogOffset
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogOffset
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_AnalogJNI_getAnalogOffset
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -337,11 +337,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogOffset
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    isAccumulatorChannel
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_AnalogJNI_isAccumulatorChannel
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_AnalogJNI_isAccumulatorChannel
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	ANALOGJNI_LOG(logDEBUG) << "isAccumulatorChannel";
@@ -359,11 +359,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_AnalogJNI_isAccumulatorChanne
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    initAccumulator
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_initAccumulator
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_AnalogJNI_initAccumulator
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -378,11 +378,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_initAccumulator
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    resetAccumulator
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_resetAccumulator
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_AnalogJNI_resetAccumulator
 	(JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -394,11 +394,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_resetAccumulator
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    setAccumulatorCenter
  * Signature: (Ljava/nio/ByteBuffer;ILjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAccumulatorCenter
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_AnalogJNI_setAccumulatorCenter
   (JNIEnv * env, jclass, jobject id, jint center, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -411,11 +411,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAccumulatorCenter
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    setAccumulatorDeadband
  * Signature: (Ljava/nio/ByteBuffer;ILjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAccumulatorDeadband
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_AnalogJNI_setAccumulatorDeadband
   (JNIEnv * env, jclass, jobject id, jint deadband, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -427,11 +427,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAccumulatorDeadba
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAccumulatorValue
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)J
  */
-JNIEXPORT jlong JNICALL Java_io_github_robolib_hal_AnalogJNI_getAccumulatorValue
+JNIEXPORT jlong JNICALL Java_io_github_robolib_jni_AnalogJNI_getAccumulatorValue
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -446,11 +446,11 @@ JNIEXPORT jlong JNICALL Java_io_github_robolib_hal_AnalogJNI_getAccumulatorValue
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAccumulatorCount
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)I
  */
-JNIEXPORT jint JNICALL Java_io_github_robolib_hal_AnalogJNI_getAccumulatorCount
+JNIEXPORT jint JNICALL Java_io_github_robolib_jni_AnalogJNI_getAccumulatorCount
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -464,11 +464,11 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_hal_AnalogJNI_getAccumulatorCount
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAccumulatorOutput
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/LongBuffer;Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_getAccumulatorOutput
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_AnalogJNI_getAccumulatorOutput
   (JNIEnv * env, jclass, jobject id, jobject value, jobject count, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -486,11 +486,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_getAccumulatorOutput
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    initializeAnalogTrigger
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;)Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_AnalogJNI_initializeAnalogTrigger
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_AnalogJNI_initializeAnalogTrigger
   (JNIEnv * env, jclass, jobject id, jobject index, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -511,11 +511,11 @@ JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_AnalogJNI_initializeAnalogT
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    cleanAnalogTrigger
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_cleanAnalogTrigger
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_AnalogJNI_cleanAnalogTrigger
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -530,11 +530,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_cleanAnalogTrigger
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    setAnalogTriggerLimitsRaw
  * Signature: (Ljava/nio/ByteBuffer;IILjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAnalogTriggerLimitsRaw
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_AnalogJNI_setAnalogTriggerLimitsRaw
   (JNIEnv * env, jclass, jobject id, jint lower, jint upper, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -547,11 +547,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAnalogTriggerLimi
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    setAnalogTriggerLimitsVoltage
  * Signature: (Ljava/nio/ByteBuffer;DDLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAnalogTriggerLimitsVoltage
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_AnalogJNI_setAnalogTriggerLimitsVoltage
   (JNIEnv * env, jclass, jobject id, jdouble lower, jdouble upper, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -564,11 +564,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAnalogTriggerLimi
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    setAnalogTriggerAveraged
  * Signature: (Ljava/nio/ByteBuffer;BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAnalogTriggerAveraged
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_AnalogJNI_setAnalogTriggerAveraged
   (JNIEnv * env, jclass, jobject id, jbyte averaged, jobject status){
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
 	ANALOGJNI_LOG(logDEBUG) << "Analog Trigger Ptr = " << *javaId;
@@ -580,11 +580,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAnalogTriggerAver
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    setAnalogTriggerFiltered
  * Signature: (Ljava/nio/ByteBuffer;BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAnalogTriggerFiltered
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_AnalogJNI_setAnalogTriggerFiltered
    (JNIEnv * env, jclass, jobject id, jbyte filtered, jobject status){
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
 	ANALOGJNI_LOG(logDEBUG) << "Analog Trigger Ptr = " << *javaId;
@@ -596,11 +596,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_AnalogJNI_setAnalogTriggerFilt
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAnalogTriggerInWindow
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogTriggerInWindow
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_AnalogJNI_getAnalogTriggerInWindow
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -613,11 +613,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogTriggerInW
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAnalogTriggerTriggerState
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogTriggerTriggerState
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_AnalogJNI_getAnalogTriggerTriggerState
   (JNIEnv * env, jclass, jobject id, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);
@@ -630,11 +630,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogTriggerTri
 }
 
 /*
- * Class:     io_github_robolib_hal_AnalogJNI
+ * Class:     io_github_robolib_jni_AnalogJNI
  * Method:    getAnalogTriggerOutput
  * Signature: (Ljava/nio/ByteBuffer;ILjava/nio/IntBuffer;)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_AnalogJNI_getAnalogTriggerOutput
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_AnalogJNI_getAnalogTriggerOutput
   (JNIEnv * env, jclass, jobject id, jint type, jobject status)
 {
 	void ** javaId = (void**)env->GetDirectBufferAddress(id);

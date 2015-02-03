@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "Log.hpp"
 
-#include "io_github_robolib_hal_I2CJNI.h"
+#include "io_github_robolib_jni_I2CJNI.h"
 
 #include "HAL/Digital.hpp"
 
@@ -14,11 +14,11 @@ TLogLevel i2cJNILogLevel = logWARNING;
     else Log().Get(level)
 
 /*
- * Class:     io_github_robolib_hal_I2CJNI
+ * Class:     io_github_robolib_jni_I2CJNI
  * Method:    i2cInitialize
  * Signature: (BLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_I2CJNI_i2CInitialize
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_I2CJNI_i2CInitialize
   (JNIEnv * env, jclass, jbyte value, jobject status)
 {
 	I2CJNI_LOG(logDEBUG) << "Calling I2CJNI i2CInititalize";
@@ -29,11 +29,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_I2CJNI_i2CInitialize
 }
 
 /*
- * Class:     io_github_robolib_hal_I2CJNI
+ * Class:     io_github_robolib_jni_I2CJNI
  * Method:    i2CTransaction
  * Signature: (BBLjava/nio/ByteBuffer;BLjava/nio/ByteBuffer;B)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_I2CJNI_i2CTransaction
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_I2CJNI_i2CTransaction
   (JNIEnv * env, jclass, jbyte port, jbyte address, jobject dataToSend, jbyte sendSize, jobject dataReceived, jbyte receiveSize)
 {
 	I2CJNI_LOG(logDEBUG) << "Calling I2CJNI i2CTransaction";
@@ -55,11 +55,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_I2CJNI_i2CTransaction
 }
 
 /*
- * Class:     io_github_robolib_hal_I2CJNI
+ * Class:     io_github_robolib_jni_I2CJNI
  * Method:    i2CWrite
  * Signature: (BBLjava/nio/ByteBuffer;B)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_I2CJNI_i2CWrite
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_I2CJNI_i2CWrite
   (JNIEnv * env, jclass, jbyte port, jbyte address, jobject dataToSend, jbyte sendSize)
 {
 	
@@ -79,11 +79,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_I2CJNI_i2CWrite
 }
 
 /*
- * Class:     io_github_robolib_hal_I2CJNI
+ * Class:     io_github_robolib_jni_I2CJNI
  * Method:    i2CRead
  * Signature: (BBLjava/nio/ByteBuffer;B)B
  */
-JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_I2CJNI_i2CRead
+JNIEXPORT jbyte JNICALL Java_io_github_robolib_jni_I2CJNI_i2CRead
   (JNIEnv * env, jclass, jbyte port, jbyte address, jobject dataReceived, jbyte receiveSize)
 {
 	I2CJNI_LOG(logDEBUG) << "Calling I2CJNI i2CRead";
@@ -99,11 +99,11 @@ JNIEXPORT jbyte JNICALL Java_io_github_robolib_hal_I2CJNI_i2CRead
 }
 
 /*
- * Class:     io_github_robolib_hal_I2CJNI
+ * Class:     io_github_robolib_jni_I2CJNI
  * Method:    i2CClose
  * Signature: (B)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_I2CJNI_i2CClose
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_I2CJNI_i2CClose
   (JNIEnv *, jclass, jbyte value)
 {
 	I2CJNI_LOG(logDEBUG) << "Calling I2CJNI i2cClose";

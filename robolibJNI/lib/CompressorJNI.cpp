@@ -1,15 +1,15 @@
 #include "Log.hpp"
-#include "io_github_robolib_hal_CompressorJNI.h"
+#include "io_github_robolib_jni_CompressorJNI.h"
 #include "HAL/HAL.hpp"
 
 typedef void *VoidPointer;
 
 /*
- * Class:     io_github_robolib_hal_CompressorJNI
+ * Class:     io_github_robolib_jni_CompressorJNI
  * Method:    initializeCompressor
  * Signature: (B)Ljava/nio/ByteBuffer;
  */
-JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_CompressorJNI_initializeCompressor
+JNIEXPORT jobject JNICALL Java_io_github_robolib_jni_CompressorJNI_initializeCompressor
   (JNIEnv *env, jclass, jbyte module)
 {
 	VoidPointer *pcm_pointer = new VoidPointer;
@@ -19,11 +19,11 @@ JNIEXPORT jobject JNICALL Java_io_github_robolib_hal_CompressorJNI_initializeCom
 }
 
 /*
- * Class:     io_github_robolib_hal_CompressorJNI
+ * Class:     io_github_robolib_jni_CompressorJNI
  * Method:    checkCompressorModule
  * Signature: (B)Z
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_checkCompressorModule
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_CompressorJNI_checkCompressorModule
   (JNIEnv *env, jclass, jbyte module)
 {
 	return checkCompressorModule(module);
@@ -31,11 +31,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_checkCompres
 
 
 /*
- * Class:     io_github_robolib_hal_CompressorJNI
+ * Class:     io_github_robolib_jni_CompressorJNI
  * Method:    getCompressor
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)Z
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getCompressor
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_CompressorJNI_getCompressor
   (JNIEnv *env, jclass, jobject pcm_pointer_object, jobject status)
 {
 	VoidPointer *pcm_pointer = (VoidPointer *)env->GetDirectBufferAddress(pcm_pointer_object);
@@ -45,11 +45,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getCompresso
 }
 
 /*
- * Class:     io_github_robolib_hal_CompressorJNI
+ * Class:     io_github_robolib_jni_CompressorJNI
  * Method:    setClosedLoopControl
  * Signature: (Ljava/nio/ByteBuffer;ZLjava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CompressorJNI_setClosedLoopControl
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CompressorJNI_setClosedLoopControl
   (JNIEnv *env, jclass, jobject pcm_pointer_object, jboolean value, jobject status)
 {
 	VoidPointer *pcm_pointer = (VoidPointer *)env->GetDirectBufferAddress(pcm_pointer_object);
@@ -59,11 +59,11 @@ JNIEXPORT void JNICALL Java_io_github_robolib_hal_CompressorJNI_setClosedLoopCon
 }
 
 /*
- * Class:     io_github_robolib_hal_CompressorJNI
+ * Class:     io_github_robolib_jni_CompressorJNI
  * Method:    getClosedLoopControl
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)Z
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getClosedLoopControl
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_CompressorJNI_getClosedLoopControl
   (JNIEnv *env, jclass, jobject pcm_pointer_object, jobject status)
 {
 	VoidPointer *pcm_pointer = (VoidPointer *)env->GetDirectBufferAddress(pcm_pointer_object);
@@ -73,11 +73,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getClosedLoo
 }
 
 /*
- * Class:     io_github_robolib_hal_CompressorJNI
+ * Class:     io_github_robolib_jni_CompressorJNI
  * Method:    getPressureSwitch
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)Z
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getPressureSwitch
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_CompressorJNI_getPressureSwitch
   (JNIEnv *env, jclass, jobject pcm_pointer_object, jobject status)
 {
 	VoidPointer *pcm_pointer = (VoidPointer *)env->GetDirectBufferAddress(pcm_pointer_object);
@@ -87,11 +87,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getPressureS
 }
 
 /*
- * Class:     io_github_robolib_hal_CompressorJNI
+ * Class:     io_github_robolib_jni_CompressorJNI
  * Method:    getCompressorCurrent
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)F
  */
-JNIEXPORT jfloat JNICALL Java_io_github_robolib_hal_CompressorJNI_getCompressorCurrent
+JNIEXPORT jfloat JNICALL Java_io_github_robolib_jni_CompressorJNI_getCompressorCurrent
   (JNIEnv *env, jclass, jobject pcm_pointer_object, jobject status)
 {
 	VoidPointer *pcm_pointer = (VoidPointer *)env->GetDirectBufferAddress(pcm_pointer_object);
@@ -101,11 +101,11 @@ JNIEXPORT jfloat JNICALL Java_io_github_robolib_hal_CompressorJNI_getCompressorC
 }
 
 /*
- * Class:     io_github_robolib_hal_CompressorJNI
+ * Class:     io_github_robolib_jni_CompressorJNI
  * Method:    getCompressorCurrentTooHighFault
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)Z
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getCompressorCurrentTooHighFault
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_CompressorJNI_getCompressorCurrentTooHighFault
   (JNIEnv *env, jclass, jobject pcm_pointer_object, jobject status)
 {
 	VoidPointer *pcm_pointer = (VoidPointer *)env->GetDirectBufferAddress(pcm_pointer_object);
@@ -115,11 +115,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getCompresso
 }
 
 /*
- * Class:     io_github_robolib_hal_CompressorJNI
+ * Class:     io_github_robolib_jni_CompressorJNI
  * Method:    getCompressorCurrentTooHighStickyFault
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)Z
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getCompressorCurrentTooHighStickyFault
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_CompressorJNI_getCompressorCurrentTooHighStickyFault
   (JNIEnv *env, jclass, jobject pcm_pointer_object, jobject status)
 {
 	VoidPointer *pcm_pointer = (VoidPointer *)env->GetDirectBufferAddress(pcm_pointer_object);
@@ -129,11 +129,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getCompresso
 }
 
 /*
- * Class:     io_github_robolib_hal_CompressorJNI
+ * Class:     io_github_robolib_jni_CompressorJNI
  * Method:    getCompressorShortedStickyFault
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)Z
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getCompressorShortedStickyFault
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_CompressorJNI_getCompressorShortedStickyFault
   (JNIEnv *env, jclass, jobject pcm_pointer_object, jobject status)
 {
 	VoidPointer *pcm_pointer = (VoidPointer *)env->GetDirectBufferAddress(pcm_pointer_object);
@@ -143,11 +143,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getCompresso
 }
 
 /*
- * Class:     io_github_robolib_hal_CompressorJNI
+ * Class:     io_github_robolib_jni_CompressorJNI
  * Method:    getCompressorShortedFault
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)Z
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getCompressorShortedFault
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_CompressorJNI_getCompressorShortedFault
   (JNIEnv *env, jclass, jobject pcm_pointer_object, jobject status)
 {
 	VoidPointer *pcm_pointer = (VoidPointer *)env->GetDirectBufferAddress(pcm_pointer_object);
@@ -157,11 +157,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getCompresso
 }
 
 /*
- * Class:     io_github_robolib_hal_CompressorJNI
+ * Class:     io_github_robolib_jni_CompressorJNI
  * Method:    getCompressorNotConnectedStickyFault
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)Z
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getCompressorNotConnectedStickyFault
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_CompressorJNI_getCompressorNotConnectedStickyFault
   (JNIEnv *env, jclass, jobject pcm_pointer_object, jobject status)
 {
 	VoidPointer *pcm_pointer = (VoidPointer *)env->GetDirectBufferAddress(pcm_pointer_object);
@@ -171,11 +171,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getCompresso
 }
 
 /*
- * Class:     io_github_robolib_hal_CompressorJNI
+ * Class:     io_github_robolib_jni_CompressorJNI
  * Method:    getCompressorNotConnectedFault
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)Z
  */
-JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getCompressorNotConnectedFault
+JNIEXPORT jboolean JNICALL Java_io_github_robolib_jni_CompressorJNI_getCompressorNotConnectedFault
   (JNIEnv *env, jclass, jobject pcm_pointer_object, jobject status)
 {
 	VoidPointer *pcm_pointer = (VoidPointer *)env->GetDirectBufferAddress(pcm_pointer_object);
@@ -184,11 +184,11 @@ JNIEXPORT jboolean JNICALL Java_io_github_robolib_hal_CompressorJNI_getCompresso
 	return getCompressorNotConnectedFault(*pcm_pointer, status_pointer);
 }
 /*
- * Class:     io_github_robolib_hal_CompressorJNI
+ * Class:     io_github_robolib_jni_CompressorJNI
  * Method:    clearAllPCMStickyFaults
  * Signature: (Ljava/nio/ByteBuffer;Ljava/nio/IntBuffer;)V
  */
-JNIEXPORT void JNICALL Java_io_github_robolib_hal_CompressorJNI_clearAllPCMStickyFaults
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_CompressorJNI_clearAllPCMStickyFaults
   (JNIEnv *env, jclass, jobject pcm_pointer_object, jobject status)
 {
 	VoidPointer *pcm_pointer = (VoidPointer *)env->GetDirectBufferAddress(pcm_pointer_object);
