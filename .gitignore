@@ -3,6 +3,7 @@
 
 libHALAthena.a
 librobolibJNI.so
+*.o
 
 CMakeFiles
 cmake_install.cmake
