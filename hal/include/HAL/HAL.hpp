@@ -219,6 +219,11 @@ extern "C"
 
 	bool getFPGAButton(int32_t *status);
 
+	void setRadioLED(unsigned char value, int32_t *status);
+	void setCommLED(unsigned char value, int32_t *status);
+	void setModeLED(unsigned char value, int32_t *status);
+	void setRSLLED(bool value, int32_t *status);
+
 	int HALSetErrorData(const char *errors, int errorsLength, int wait_ms);
 
 	int HALGetControlWord(HALControlWord *data);

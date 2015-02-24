@@ -214,3 +214,35 @@ JNIEXPORT jstring JNICALL Java_io_github_robolib_jni_HALUtil_getHALstrerror
 	HALUTIL_LOG(logDEBUG) << "Calling HALUtil getHALstrerror errorCode=" << errorCode << " msg=" << msg;
 	return env->NewStringUTF(msg);
 }
+
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_HALUtil_setRadioLED
+  (JNIEnv * env, jclass, jchar value, jobject status)
+{
+    jint * statusPtr = (jint*)env->GetDirectBufferAddress(status);
+    setRadioLED(value, statusPtr);
+
+}
+
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_HALUtil_setCommLED
+  (JNIEnv * env, jclass, jchar value, jobject status)
+{
+    jint * statusPtr = (jint*)env->GetDirectBufferAddress(status);
+    setCommLED(value, statusPtr);
+
+}
+
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_HALUtil_setModeLED
+  (JNIEnv * env, jclass, jchar value, jobject status)
+{
+    jint * statusPtr = (jint*)env->GetDirectBufferAddress(status);
+    setModeLED(value, statusPtr);
+
+}
+
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_HALUtil_setRSLLED
+  (JNIEnv * env, jclass, jboolean value, jobject status)
+{
+    jint * statusPtr = (jint*)env->GetDirectBufferAddress(status);
+    setRSLLED(value, statusPtr);
+
+}

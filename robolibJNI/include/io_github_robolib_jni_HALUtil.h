@@ -127,6 +127,24 @@ JNIEXPORT jint JNICALL Java_io_github_robolib_jni_HALUtil_getHALErrno
 JNIEXPORT jstring JNICALL Java_io_github_robolib_jni_HALUtil_getHALstrerror
   (JNIEnv *, jclass, jint);
 
+/*
+ * Class:     io_github_robolib_jni_HALUtil
+ * Method:    setWifiLED
+ * Signature: ()
+ */
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_HALUtil_setRadioLED
+  (JNIEnv *, jclass, jchar, jobject);
+
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_HALUtil_setCommLED
+  (JNIEnv *, jclass, jchar, jobject);
+
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_HALUtil_setModeLED
+  (JNIEnv *, jclass, jchar, jobject);
+
+JNIEXPORT void JNICALL Java_io_github_robolib_jni_HALUtil_setRSLLED
+  (JNIEnv *, jclass, jboolean, jobject);
+
+
 #ifdef __cplusplus
 }
 #endif
