@@ -181,6 +181,34 @@ bool getFPGAButton(int32_t *status)
 	return global->readUserButton(status);
 }
 
+/**
+ * Set the Radio LED on the RIO
+ */
+void setRadioLED(unsigned char value, int32_t *status){
+	global->writeLEDs_Radio(value, status);
+}
+
+/**
+ * Set the Comm LED on the RIO
+ */
+void setCommLED(unsigned char value, int32_t *status){
+	global->writeLEDs_Comm(value, status);
+}
+
+/**
+ * Set the Mode LED on the RIO
+ */
+void setModeLED(unsigned char value, int32_t *status){
+	global->writeLEDs_Mode(value, status);
+}
+
+/**
+ * Set the RSL LED on the RIO
+ */
+void setRSLLED(bool value, int32_t *status){
+	global->writeLEDs_RSL(value, status);
+}
+
 int HALSetErrorData(const char *errors, int errorsLength, int wait_ms)
 {
 	return setErrorData(errors, errorsLength, wait_ms);
